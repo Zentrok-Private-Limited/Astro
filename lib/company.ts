@@ -22,6 +22,12 @@ export const company = {
   emailAlt: process.env.NEXT_PUBLIC_COMPANY_EMAIL_ALT || "services@tester.org",
   /** WhatsApp number in international format (no spaces). */
   whatsapp: process.env.NEXT_PUBLIC_COMPANY_WHATSAPP || "+919866471845",
+  /** Mailing / office address. */
+  address:
+    process.env.NEXT_PUBLIC_COMPANY_ADDRESS ||
+    "1204 Serenity Lane, Suite 210, Edison, NJ 08820, USA",
+  /** Office working hours. */
+  hours: process.env.NEXT_PUBLIC_COMPANY_HOURS || "Mon – Sat, 9:00 AM – 8:00 PM",
 } as const
 
 export type Company = typeof company

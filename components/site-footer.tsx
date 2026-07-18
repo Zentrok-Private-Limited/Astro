@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Youtube, Twitter, Linkedin, Sun } from "lucide-react"
+import { Globe, Send, AtSign, Rss, Sun } from "lucide-react"
 import { company } from "@/lib/company"
 import { mainNav, astrologyLinks } from "@/lib/navigation"
 import { NewsletterForm } from "@/components/newsletter-form"
@@ -27,10 +27,10 @@ export function SiteFooter() {
             </p>
             <div className="mt-6 flex items-center gap-3">
               {[
-                { icon: Facebook, label: "Facebook" },
-                { icon: Youtube, label: "YouTube" },
-                { icon: Twitter, label: "Twitter" },
-                { icon: Linkedin, label: "LinkedIn" },
+                { icon: Globe, label: "Website" },
+                { icon: Send, label: "Telegram" },
+                { icon: AtSign, label: "Email" },
+                { icon: Rss, label: "Blog" },
               ].map(({ icon: Icon, label }) => (
                 <a
                   key={label}
