@@ -17,7 +17,7 @@ export default function PujaServicesPage() {
     <>
       <PageHero
         title="Puja Services"
-        subtitle="Services offered by our priests, available worldwide online and in person."
+        subtitle="Services offered by our priests, available worldwide online (Zoom, Google Meet) and in person."
         crumbs={[{ label: "Home", href: "/" }, { label: "Puja Services" }]}
       />
 

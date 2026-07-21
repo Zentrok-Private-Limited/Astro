@@ -51,7 +51,7 @@ export function HomeHero() {
             priority={i === 0}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/40 to-primary/10" />
         </div>
       ))}
 
@@ -67,14 +67,13 @@ export function HomeHero() {
             {slides[index].subtitle}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/puja-services">Explore Services</Link>
             </Button>
             <Button
-              asChild
               size="lg"
               variant="outline"
-              className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+              className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/80"
             >
               <Link href="/contact">Book a Consultation</Link>
             </Button>

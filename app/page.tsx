@@ -1,17 +1,35 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight, Flame, Sparkles, HandHeart, Star } from "lucide-react"
-import { HomeHero } from "@/components/home/home-hero"
-import { SectionHeading } from "@/components/section-heading"
-import { Button } from "@/components/ui/button"
-import { poojaServices, storeCategories, grahaRemedies } from "@/lib/content"
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, Flame, Sparkles, HandHeart, Star } from "lucide-react";
+import { HomeHero } from "@/components/home/home-hero";
+import { SectionHeading } from "@/components/section-heading";
+import { Button } from "@/components/ui/button";
+import { poojaServices, storeCategories, grahaRemedies } from "@/lib/content";
+import { motion } from "framer-motion";
 
 const highlights = [
-  { icon: Flame, title: "Authentic Rituals", text: "Performed strictly per Vedic scripture by certified priests." },
-  { icon: Sparkles, title: "Worldwide Access", text: "Join live ceremonies from anywhere via Zoom or Google Meet." },
-  { icon: HandHeart, title: "All Materials Arranged", text: "We prepare every puja item so you can focus on devotion." },
-  { icon: Star, title: "Trusted Guidance", text: "Decades of experience in astrology and spiritual counsel." },
-]
+  {
+    icon: Flame,
+    title: "Authentic Rituals",
+    text: "Performed strictly per Vedic scripture by certified priests.",
+  },
+  {
+    icon: Sparkles,
+    title: "Worldwide Access",
+    text: "Join live ceremonies from anywhere via Zoom or Google Meet.",
+  },
+  {
+    icon: HandHeart,
+    title: "All Materials Arranged",
+    text: "We prepare every puja item so you can focus on devotion.",
+  },
+  {
+    icon: Star,
+    title: "Trusted Guidance",
+    text: "Decades of experience in astrology and spiritual counsel.",
+  },
+];
 
 export default function HomePage() {
   return (
@@ -27,8 +45,12 @@ export default function HomePage() {
                 <Icon className="size-6" aria-hidden="true" />
               </span>
               <div>
-                <h3 className="font-serif text-lg font-semibold text-primary">{title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{text}</p>
+                <h3 className="font-serif text-lg font-semibold text-primary">
+                  {title}
+                </h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {text}
+                </p>
               </div>
             </div>
           ))}
@@ -51,16 +73,23 @@ export default function HomePage() {
               <span className="flex size-11 items-center justify-center rounded-lg bg-primary text-accent">
                 <Flame className="size-5" aria-hidden="true" />
               </span>
-              <h3 className="mt-4 font-serif text-xl font-semibold text-primary">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
+              <h3 className="mt-4 font-serif text-xl font-semibold text-primary">
+                {s.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {s.description}
+              </p>
             </article>
           ))}
         </div>
         <div className="mt-10 text-center">
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <Link href="/puja-services">
-              View All Services <ArrowRight className="ml-2 size-4" />
-            </Link>
+          <Button
+            render={<Link href="/puja-services" />}
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8"
+          >
+            View All Services
+            <ArrowRight className="ml-2 size-4" />
           </Button>
         </div>
       </section>
@@ -68,13 +97,23 @@ export default function HomePage() {
       {/* Astrology */}
       <section className="bg-secondary/50">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
-          <div className="relative mx-auto aspect-square w-full max-w-md">
-            <Image
-              src="/images/astrology-wheel.png"
-              alt="Vedic astrology zodiac wheel"
-              fill
-              className="object-contain drop-shadow-xl"
-            />
+          <div className="relative aspect-square w-full max-w-xl">
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 30,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+              className="absolute inset-0"
+            >
+              <Image
+                src="/images/chakra.png"
+                alt="Vedic astrology zodiac wheel"
+                fill
+                className="object-contain drop-shadow-xl"
+              />
+            </motion.div>
           </div>
           <div>
             <SectionHeading
@@ -94,11 +133,14 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="/astrology">
-                Explore Astrology <ArrowRight className="ml-2 size-4" />
-              </Link>
-            </Button>
+            <Button
+            render={<Link href="/astrology" />}
+            size="lg"
+            className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
+          >
+            Explore Astrology
+            <ArrowRight className="ml-2 size-4" />
+          </Button>
           </div>
         </div>
       </section>
@@ -116,17 +158,15 @@ export default function HomePage() {
           <div className="p-8">
             <h3 className="font-serif text-2xl font-bold">The Foundation</h3>
             <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">
-              Meditation, yoga, Vedic studies and Bhagavad Gita classes to nurture the mind, body
-              and spirit for seekers of all ages.
+              Meditation, yoga, Vedic studies and Bhagavad Gita classes to
+              nurture the mind, body and spirit for seekers of all ages.
             </p>
             <Button
-              asChild
               variant="outline"
-              className="mt-6 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+              render={<Link href="/foundation" />}
+              className="mt-6 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground"
             >
-              <Link href="/foundation">
                 Read More <ArrowRight className="ml-2 size-4" />
-              </Link>
             </Button>
           </div>
         </div>
@@ -140,18 +180,15 @@ export default function HomePage() {
             className="h-56 w-full object-cover"
           />
           <div className="p-8">
-            <h3 className="font-serif text-2xl font-bold text-primary">The Store</h3>
+            <h3 className="font-serif text-2xl font-bold text-primary">
+              The Store
+            </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Deity idols, puja essentials, sacred jewellery and fresh flowers — sourced with care
-              and shipped worldwide for your rituals.
+              Deity idols, puja essentials, sacred jewellery and fresh flowers —
+              sourced with care and shipped worldwide for your rituals.
             </p>
-            <Button
-              asChild
-              className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90"
-            >
-              <Link href="/store">
-                Visit Store <ArrowRight className="ml-2 size-4" />
-              </Link>
+            <Button render={<Link href="/store" />} className="mt-6 bg-accent text-accent-foreground hover:text-primary-foreground hover:bg-accent/90">
+              Visit Store <ArrowRight className="ml-2 size-4" />
             </Button>
           </div>
         </div>
@@ -177,9 +214,15 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-primary">{c.title}</h3>
-                  <p className="text-xs font-medium uppercase tracking-wide text-accent">{c.count}</p>
-                  <p className="mt-2 text-sm text-muted-foreground">{c.description}</p>
+                  <h3 className="font-serif text-lg font-semibold text-primary">
+                    {c.title}
+                  </h3>
+                  <p className="text-xs font-medium uppercase tracking-wide text-accent">
+                    {c.count}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {c.description}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -194,14 +237,17 @@ export default function HomePage() {
             Begin Your Spiritual Journey Today
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-primary-foreground/80">
-            Whether you seek a puja, an astrological reading or spiritual guidance, our priests are
-            here to help you every step of the way.
+            Whether you seek a puja, an astrological reading or spiritual
+            guidance, our priests are here to help you every step of the way.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button
+            size="lg"
+            className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
+          >
             <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>
     </>
-  )
+  );
 }

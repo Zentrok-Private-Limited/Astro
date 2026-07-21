@@ -40,7 +40,7 @@ export default function FoundationPage() {
             align="left"
             description="Our Foundation offers guided programs that draw on ancient wisdom to bring calm, clarity and purpose to modern living. Join a class in person or online."
           />
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">
               Join a Class <ArrowRight className="ml-2 size-4" />
             </Link>

@@ -7,7 +7,7 @@
  * brand name is "tester".
  */
 
-const NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "tester"
+const NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "Astro"
 
 export const company = {
   /** Primary brand / company name shown across the site. */
@@ -17,7 +17,7 @@ export const company = {
   /** Primary contact phone number. */
   phone: process.env.NEXT_PUBLIC_COMPANY_PHONE || "+91 98664-71845",
   /** Primary contact email. */
-  email: process.env.NEXT_PUBLIC_COMPANY_EMAIL || "hello@tester.org",
+  email: process.env.NEXT_PUBLIC_COMPANY_EMAIL || "hello@astro.org",
   /** Secondary contact email. */
   emailAlt: process.env.NEXT_PUBLIC_COMPANY_EMAIL_ALT || "services@tester.org",
   /** WhatsApp number in international format (no spaces). */
