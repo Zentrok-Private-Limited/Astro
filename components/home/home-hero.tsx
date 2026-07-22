@@ -40,7 +40,7 @@ export function HomeHero() {
       {slides.map((slide, i) => (
         <div
           key={i}
-          className="absolute inset-0 transition-opacity duration-1000"
+          className="absolute inset-0 duration-1000"
           style={{ opacity: i === index ? 1 : 0 }}
           aria-hidden={i !== index}
         >
