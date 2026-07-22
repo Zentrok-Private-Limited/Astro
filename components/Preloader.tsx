@@ -9,7 +9,6 @@ import Nebula from "./Nebula";
 import ShootingStars from "./ShootingStars";
 import ZodiacWheel from "./ZodiacWheel";
 import OrbitingPlanets from "./OrbitingPlanets";
-import FloatingSymbols from "./FloatingSymbols";
 
 interface Props {
   isLoading: boolean;
@@ -65,8 +64,6 @@ export default function Preloader({ isLoading }: Props) {
               }}
               className="absolute h-[420px] w-[420px] rounded-full bg-yellow-300/10 blur-[80px]"
             />
-
-            <FloatingSymbols />
 
             <OrbitingPlanets />
 
