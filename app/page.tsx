@@ -95,7 +95,7 @@ export default function HomePage() {
       </section>
 
       {/* Astrology */}
-      <section className="bg-secondary/50">
+      <section className="bg-secondary">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
           <div className="relative aspect-square w-full max-w-xl">
             <motion.div
@@ -108,7 +108,7 @@ export default function HomePage() {
               className="absolute inset-0"
             >
               <Image
-                src="/images/chakra.png"
+                src="/images/chakra2.png"
                 alt="Vedic astrology zodiac wheel"
                 fill
                 className="object-contain drop-shadow-xl"

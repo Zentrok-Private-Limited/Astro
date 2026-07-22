@@ -10,7 +10,12 @@ type Props = {
 
 export function PageHero({ title, subtitle, crumbs }: Props) {
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground">
+    <section 
+    className="relative overflow-hidden text-primary-foreground"
+    style={{
+    backgroundImage: "url('/images/bg-hero.jpg')",
+  }}
+    >
       <div
         className="pointer-events-none absolute inset-0 opacity-20"
         style={{
@@ -22,13 +27,13 @@ export function PageHero({ title, subtitle, crumbs }: Props) {
       <div className="relative mx-auto max-w-7xl px-6 py-16 text-center sm:py-20">
         <h1 className="text-balance font-serif text-4xl font-bold sm:text-5xl">{title}</h1>
         {subtitle && (
-          <p className="mx-auto mt-4 max-w-2xl text-pretty leading-relaxed text-primary-foreground/75">
+          <p className="mx-auto mt-4 max-w-2xl text-pretty leading-relaxed text-primary-foreground">
             {subtitle}
           </p>
         )}
         {crumbs && (
           <nav aria-label="Breadcrumb" className="mt-6">
-            <ol className="flex items-center justify-center gap-2 text-sm text-primary-foreground/60">
+            <ol className="flex items-center justify-center gap-2 text-sm text-primary-foreground">
               {crumbs.map((c, i) => (
                 <li key={i} className="flex items-center gap-2">
                   {c.href ? (
