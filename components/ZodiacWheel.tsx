@@ -74,7 +74,7 @@ export default function ZodiacWheel() {
 
       <motion.div
         animate={{
-          rotate: 360,
+          scale:4,
         }}
         transition={{
           duration: 80,
@@ -84,10 +84,10 @@ export default function ZodiacWheel() {
         className="relative z-20"
       >
         <Image
-          src="/images/chakra.png"
+          src="/images/om3.png"
           alt="Astrology Wheel"
-          width={260}
-          height={260}
+          width={200}
+          height={200}
           priority
           className="
             select-none
@@ -152,7 +152,7 @@ export default function ZodiacWheel() {
         />
       </motion.svg>
 
-      {/* Core */}
+      {/* Core
 
       <motion.div
         className="
@@ -172,7 +172,7 @@ export default function ZodiacWheel() {
           duration: 2,
           repeat: Infinity,
         }}
-      />
+      /> */}
 
       {/* Tiny Orbiting Lights */}
 
