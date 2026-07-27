@@ -9,20 +9,20 @@ import { company } from "@/lib/company"
 
 const slides = [
   {
-    image: "/images/hero-pooja.png",
-    title: "Online Puja Services, Worldwide",
-    subtitle: "Sacred ceremonies performed live over Zoom and Google Meet, wherever you are.",
-  },
-  {
-    image: "/images/hero-diya.png",
-    title: "Vedic Wisdom for Everyday Life",
-    subtitle: "Personalised horoscopes, remedies and guidance rooted in ancient tradition.",
-  },
-  {
-    image: "/images/service-homa.png",
-    title: "Homas & Havans by Certified Priests",
-    subtitle: "Authentic fire rituals with all required materials arranged for you.",
-  },
+  image: "/images/hero-pooja.png",
+  title: "Book Your Online Pooja Services Worldwide",
+  subtitle: "Connect with experienced Vedic priests for authentic online poojas, performed live from the comfort of your home, anywhere in the world.",
+},
+{
+  image: "/images/hero-diya.png",
+  title: "Book Your Online Pooja at Sacred Temples",
+  subtitle: "Offer prayers and participate in sacred temple rituals remotely with live streaming from renowned temples across India.",
+},
+{
+  image: "/images/service-homa.png",
+  title: "Guidance for Astrology and Horoscope",
+  subtitle: "Receive personalized horoscope readings, astrological consultations, and effective remedies based on authentic Vedic astrology.",
+},
 ]
 
 export function HomeHero() {
@@ -36,7 +36,7 @@ export function HomeHero() {
   const go = (dir: number) => setIndex((i) => (i + dir + slides.length) % slides.length)
 
   return (
-    <section className="relative h-[520px] w-full overflow-hidden bg-primary sm:h-[600px]">
+    <section className="border relative h-[300px] w-full overflow-hidden bg-primary lg:h-[400px]">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -51,7 +51,7 @@ export function HomeHero() {
             priority={i === 0}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/40 to-primary/10" />
+          <div className="absolute inset-0 bg-linear-to-r from-black/50 via-primary/40 to-primary/10" />
         </div>
       ))}
 
@@ -60,10 +60,10 @@ export function HomeHero() {
           <span className="inline-block rounded-full border border-accent/50 bg-accent/10 px-4 py-1 text-sm font-medium text-accent">
             {company.name} — Vedic Astrology &amp; Puja
           </span>
-          <h1 className="mt-5 text-balance font-serif text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-5 text-balance font-serif text-4xl font-bold leading-tight sm:text-2xl md:text-4xl">
             {slides[index].title}
           </h1>
-          <p className="mt-4 max-w-lg text-pretty text-lg leading-relaxed text-primary-foreground/80">
+          <p className="mt-4 max-w-lg text-pretty text-base leading-relaxed text-primary-foreground/80">
             {slides[index].subtitle}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">

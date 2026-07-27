@@ -38,7 +38,7 @@ export default function HomePage() {
 
       {/* Highlights */}
       <section className="border-b border-border bg-card">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-15 sm:grid-cols-2 lg:grid-cols-4">
           {highlights.map(({ icon: Icon, title, text }) => (
             <div key={title} className="flex items-start gap-4">
               <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-secondary text-primary">

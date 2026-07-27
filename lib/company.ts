@@ -7,7 +7,7 @@
  * brand name is "tester".
  */
 
-const NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "Astro"
+const NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "Book Online Pooja"
 
 export const company = {
   /** Primary brand / company name shown across the site. */
