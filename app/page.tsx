@@ -8,26 +8,41 @@ import { Button } from "@/components/ui/button";
 import { poojaServices, storeCategories, grahaRemedies } from "@/lib/content";
 import { motion } from "framer-motion";
 
-const highlights = [
+const pujaCategories = [
   {
-    icon: Flame,
-    title: "Authentic Rituals",
-    text: "Performed strictly per Vedic scripture by certified priests.",
+    title: "Health & Healing Rituals",
+    subtitle: "For wellness, recovery & vitality",
+    image: "images/health-heal.webp",
   },
   {
-    icon: Sparkles,
-    title: "Worldwide Access",
-    text: "Join live ceremonies from anywhere via Zoom or Google Meet.",
+    title: "Wealth & Prosperity",
+    subtitle: "Attract abundance & success",
+    image: "/images/wealth.png",
   },
   {
-    icon: HandHeart,
-    title: "All Materials Arranged",
-    text: "We prepare every puja item so you can focus on devotion.",
+    title: "Career & Education",
+    subtitle: "Growth in studies & profession",
+    image: "/images/career.png",
   },
   {
-    icon: Star,
-    title: "Trusted Guidance",
-    text: "Decades of experience in astrology and spiritual counsel.",
+    title: "Marriage, Love & Relationships",
+    subtitle: "Harmony and stronger bonds",
+    image: "/images/love.webp",
+  },
+  {
+    title: "Protection from Negativity",
+    subtitle: "Remove obstacles & evil influences",
+    image: "/images/protection.jpg",
+  },
+  {
+    title: "Festivals & Special Occasions",
+    subtitle: "Sacred rituals for every celebration",
+    image: "/images/festival.webp",
+  },
+  {
+    title: "Peace & Spiritual Growth",
+    subtitle: "Inner peace and divine blessings",
+    image: "/images/peace.webp",
   },
 ];
 
@@ -37,25 +52,55 @@ export default function HomePage() {
       <HomeHero />
 
       {/* Highlights */}
-      <section className="border-b border-border bg-card">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-15 sm:grid-cols-2 lg:grid-cols-4">
-          {highlights.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="flex items-start gap-4">
-              <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
-                <Icon className="size-6" aria-hidden="true" />
-              </span>
-              <div>
-                <h3 className="font-serif text-lg font-semibold text-primary">
-                  {title}
-                </h3>
-                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  {text}
-                </p>
-              </div>
-            </div>
-          ))}
+      <section className="bg-secondary/20 py-8">
+  <div className="mx-auto max-w-8xl px-6">
+
+    <div className="mb-5 text-center">
+  <h2 className="font-serif text-lg text-primary md:text-2xl">
+    Select Sacred Pujas Curated for Health, Prosperity, Relationships,
+    Protection, Celebrations & Spiritual Well-being
+  </h2>
+
+  <div className="mt-3 flex items-center justify-center gap-4">
+    <div className="h-px w-20 bg-linear-to-r from-transparent to-primary/40" />
+    <span className="text-lg text-primary/70">✦</span>
+    <div className="h-px w-20 bg-linear-to-l from-transparent to-primary/40" />
+  </div>
+</div>
+
+    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+
+      {pujaCategories.map((item) => (
+        <div
+          key={item.title}
+          className="group cursor-pointer overflow-hidden rounded-2xl border border-primary/15 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:shadow-xl"
+        >
+          <div className="overflow-hidden rounded-xl">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="aspect-square w-full object-cover transition duration-500 group-hover:scale-110"
+            />
+          </div>
+
+          <div className="pt-2 text-center">
+
+            <h3 className="mt-3 font-serif text-base font-semibold leading-tight text-primary">
+  {item.title}
+</h3>
+
+<p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+  {item.subtitle}
+</p>
+
+          </div>
         </div>
-      </section>
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
       {/* Puja services */}
       <section className="mx-auto max-w-7xl px-6 py-20">
@@ -232,22 +277,34 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="rounded-2xl bg-primary px-8 py-14 text-center text-primary-foreground">
-          <h2 className="text-balance font-serif text-3xl font-bold sm:text-4xl">
-            Begin Your Spiritual Journey Today
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-primary-foreground/80">
-            Whether you seek a puja, an astrological reading or spiritual
-            guidance, our priests are here to help you every step of the way.
-          </p>
-          <Button
-            size="lg"
-            className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
-          >
-            <Link href="/contact">Get in Touch</Link>
-          </Button>
-        </div>
-      </section>
+  <div
+    className="relative overflow-hidden rounded-2xl bg-cover bg-center bg-no-repeat px-8 py-14 text-center text-white"
+    style={{
+      backgroundImage: "url('/images/home-cta-banner.jpg')",
+    }}
+  >
+    {/* Optional dark overlay */}
+    <div className="absolute inset-0 bg-black/40"></div>
+
+    <div className="relative z-10">
+      <h2 className="text-balance font-serif text-3xl font-bold sm:text-4xl">
+        Begin Your Spiritual Journey Today
+      </h2>
+
+      <p className="mx-auto mt-4 max-w-xl leading-relaxed text-white/90">
+        Whether you seek a puja, an astrological reading or spiritual
+        guidance, our priests are here to help you every step of the way.
+      </p>
+
+      <Button
+        size="lg"
+        className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
+      >
+        <Link href="/contact">Get in Touch</Link>
+      </Button>
+    </div>
+  </div>
+</section>
     </>
   );
 }

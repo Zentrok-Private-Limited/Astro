@@ -5,21 +5,20 @@ import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { company } from "@/lib/company"
 
 const slides = [
   {
-  image: "/images/hero-pooja.png",
+  image: "/images/slide1.png",
   title: "Book Your Online Pooja Services Worldwide",
   subtitle: "Connect with experienced Vedic priests for authentic online poojas, performed live from the comfort of your home, anywhere in the world.",
 },
 {
-  image: "/images/hero-diya.png",
+  image: "/images/slide2.png",
   title: "Book Your Online Pooja at Sacred Temples",
   subtitle: "Offer prayers and participate in sacred temple rituals remotely with live streaming from renowned temples across India.",
 },
 {
-  image: "/images/service-homa.png",
+  image: "/images/slide3.png",
   title: "Guidance for Astrology and Horoscope",
   subtitle: "Receive personalized horoscope readings, astrological consultations, and effective remedies based on authentic Vedic astrology.",
 },
@@ -36,7 +35,7 @@ export function HomeHero() {
   const go = (dir: number) => setIndex((i) => (i + dir + slides.length) % slides.length)
 
   return (
-    <section className="border relative h-[300px] w-full overflow-hidden bg-primary lg:h-[400px]">
+    <section className="border relative h-[450px] w-full overflow-hidden bg-primary lg:h-[350px]">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -51,19 +50,16 @@ export function HomeHero() {
             priority={i === 0}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-r from-black/50 via-primary/40 to-primary/10" />
+          <div className="absolute inset-0 bg-linear-to-r from-black/50 via-primary/30 to-primary/10" />
         </div>
       ))}
 
       <div className="relative mx-auto flex h-full max-w-7xl items-center px-6">
         <div className="max-w-xl text-primary-foreground">
-          <span className="inline-block rounded-full border border-accent/50 bg-accent/10 px-4 py-1 text-sm font-medium text-accent">
-            {company.name} — Vedic Astrology &amp; Puja
-          </span>
-          <h1 className="mt-5 text-balance font-serif text-4xl font-bold leading-tight sm:text-2xl md:text-4xl">
+          <h1 className="mt-5 text-balance font-serif text-4xl font-bold leading-tight sm:text-xl md:text-4xl">
             {slides[index].title}
           </h1>
-          <p className="mt-4 max-w-lg text-pretty text-base leading-relaxed text-primary-foreground/80">
+          <p className="mt-4 max-w-lg text-pretty text-sm md:text-base leading-relaxed text-primary-foreground/80">
             {slides[index].subtitle}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -77,20 +73,6 @@ export function HomeHero() {
             >
               <Link href="/contact">Book a Consultation</Link>
             </Button>
-          </div>
-          <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-primary-foreground/80">
-            <a
-              href={`tel:${company.phone.replace(/[^+\d]/g, "")}`}
-              className="flex items-center gap-2 transition-colors hover:text-accent"
-            >
-              <Phone className="size-4" /> {company.phone}
-            </a>
-            <a
-              href={`mailto:${company.email}`}
-              className="flex items-center gap-2 transition-colors hover:text-accent"
-            >
-              <Mail className="size-4" /> {company.email}
-            </a>
           </div>
         </div>
       </div>
