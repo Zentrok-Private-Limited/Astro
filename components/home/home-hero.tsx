@@ -35,7 +35,7 @@ export function HomeHero() {
   const go = (dir: number) => setIndex((i) => (i + dir + slides.length) % slides.length)
 
   return (
-    <section className="border relative h-[450px] w-full overflow-hidden bg-primary lg:h-[350px]">
+    <section className="border relative h-112.5 w-full overflow-hidden bg-primary lg:h-87.5">
       {slides.map((slide, i) => (
         <div
           key={i}
