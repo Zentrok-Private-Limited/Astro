@@ -18,69 +18,53 @@ import {
 export default function WealthandProsperity() {
   const wealthPujas = [
   {
-    title: "Sri Sukta Homam",
-    description:
-      "A sacred homam dedicated to Goddess Mahalakshmi to invoke wealth, abundance, prosperity, harmony, and overall well-being for the family.",
-    image: "/images/lakshmi.jpg",
-    duration: "2–3 Hours",
-    deity: "Goddess Mahalakshmi",
-  },
-  {
-    title: "Mahalakshmi Puja",
-    description:
-      "Performed to seek the blessings of Goddess Lakshmi for financial stability, success, prosperity, and happiness in both home and business.",
-    image: "/images/lakshmi-puja.jpg",
-    duration: "2 Hours",
-    deity: "Goddess Mahalakshmi",
-  },
-  {
-    title: "Kubera Lakshmi Puja",
-    description:
-      "A powerful ritual invoking Lord Kubera and Goddess Lakshmi for financial growth, wealth accumulation, and lasting prosperity.",
-    image: "/images/kubera-lakshmi.jpg",
-    duration: "2–3 Hours",
-    deity: "Lord Kubera & Goddess Lakshmi",
-  },
-  {
-    title: "Kanakadhara Stotra Parayan",
-    description:
-      "The sacred hymn composed by Adi Shankaracharya, recited to invoke Goddess Lakshmi's grace for prosperity, abundance, and relief from financial difficulties.",
-    image: "/images/kanakadhara.jpg",
-    duration: "1 Hour",
-    deity: "Goddess Mahalakshmi",
-  },
-  {
-    title: "Vyapara Vridhi Puja",
-    description:
-      "A special puja performed for business growth, increased sales, professional success, and removal of obstacles affecting commercial ventures.",
-    image: "/images/business-puja.jpg",
-    duration: "2 Hours",
-    deity: "Lord Ganesha & Goddess Lakshmi",
-  },
-  {
-    title: "Rin Vimochana Puja",
-    description:
-      "Performed to pray for relief from debts, financial burdens, and monetary challenges while seeking stability and peace of mind.",
-    image: "/images/rin-vimochana.jpg",
-    duration: "2 Hours",
-    deity: "Lord Shiva",
-  },
-  {
-    title: "Lakshmi Kubera Homam",
-    description:
-      "An auspicious Vedic homam performed to attract wealth, remove financial obstacles, and invite prosperity into home and business.",
-    image: "/images/lakshmi-kubera-homam.jpg",
-    duration: "3 Hours",
-    deity: "Lord Kubera & Goddess Lakshmi",
-  },
-  {
-    title: "Dhana Akarshana Homam",
-    description:
-      "A sacred fire ritual performed to attract financial opportunities, abundance, success, and sustained prosperity through divine blessings.",
-    image: "/images/dhana-homam.jpg",
-    duration: "3 Hours",
-    deity: "Goddess Mahalakshmi",
-  },
+  title: "Sri Sukta Homam",
+  description:
+    "A powerful Vedic fire ritual based on the Sri Sukta, performed to invoke Goddess Mahalakshmi's blessings for wealth, prosperity, abundance, peace, and overall family well-being.",
+  image: "/images/lakshmi.jpg",
+  duration: "2–3 Hours",
+  deity: "Goddess Mahalakshmi",
+},
+{
+  title: "Sri Lakshmi Narayana Hridaya",
+  description:
+    "A sacred recitation and puja dedicated to Lord Narayana and Goddess Lakshmi, performed to attain divine protection, financial stability, marital harmony, spiritual growth, and lasting prosperity.",
+  image: "/images/mahalakshmi.jpg",
+  duration: "2 Hours",
+  deity: "Goddess Mahalakshmi",
+},
+{
+  title: "Lakshmi Narayana Homam",
+  description:
+    "A sacred homam and puja performed to seek the combined blessings of Lord Narayana and Goddess Lakshmi for health, happiness, prosperity, family harmony, and success in all aspects of life.",
+  image: "/images/lakshminarayan.jpg",
+  duration: "2–3 Hours",
+  deity: "Lord Narayana & Goddess Lakshmi",
+},
+{
+  title: "Sri Suktam",
+  description:
+    "The sacred Sri Suktam is chanted to invoke Goddess Mahalakshmi's divine grace, attracting wealth, prosperity, good fortune, inner peace, and the removal of financial hardships.",
+  image: "/images/lakshmi.jpg",
+  duration: "1 Hour",
+  deity: "Goddess Mahalakshmi",
+},
+{
+  title: "Lakshmi Homa",
+  description:
+    "A traditional fire ritual dedicated to Goddess Mahalakshmi, performed to remove financial obstacles, attract abundance, enhance career and business success, and bring lasting prosperity.",
+  image: "/images/mahalakshmi.jpg",
+  duration: "2 Hours",
+  deity: "Goddess Mahalakshmi",
+},
+{
+  title: "Lakshmi Kubera Homam",
+  description:
+    "An auspicious Vedic homam dedicated to Goddess Lakshmi and Lord Kubera to attract wealth, improve financial stability, remove debts, and bless the family with lasting prosperity and abundance.",
+  image: "/images/lakshmikuber.jpg",
+  duration: "3 Hours",
+  deity: "Lord Kubera & Goddess Lakshmi",
+},
 ];
 
   const benefits = [
@@ -167,7 +151,7 @@ const steps = [
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-secondary/30 via-background to-background">
+      <section className="relative overflow-hidden bg-linear-to-b from-secondary/30 via-background to-background">
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 lg:grid-cols-2">
 

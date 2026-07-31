@@ -25,13 +25,13 @@ const pujaCategories = [
     title: "Career & Education",
     subtitle: "Growth in studies & profession",
     image: "/images/career.png",
-    link:"/health-healing"
+    link:"/career-education-success"
   },
   {
     title: "Marriage, Love & Relationships",
     subtitle: "Harmony and stronger bonds",
     image: "/images/love.webp",
-    link:"/health-healing"
+    link:"/love-marriage-relationships"
   },
   {
     title: "Protection from Negativity",
