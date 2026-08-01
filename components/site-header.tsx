@@ -21,7 +21,7 @@ export function SiteHeader() {
           <p className="text-primary-foreground/80">
             Worldwide online &amp; in-person Vedic services — Zoom &amp; Google Meet available
           </p>
-          <div className="flex items-center gap-6">
+          {/* <div className="flex items-center gap-6">
             <a
               href={`tel:${company.phone.replace(/[^+\d]/g, "")}`}
               className="flex items-center gap-2 transition-colors hover:text-accent"
@@ -32,7 +32,7 @@ export function SiteHeader() {
             <a href={`mailto:${company.email}`} className="transition-colors hover:text-accent">
               {company.email}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -48,7 +48,7 @@ export function SiteHeader() {
                 {company.name}
               </span>
               <span className="text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">
-                Vedic Astrology &amp; Puja
+                Vedic Astrology &amp; pooja
               </span>
             </span>
           </Link>
@@ -75,7 +75,7 @@ export function SiteHeader() {
 
           <div className="flex items-center gap-3">
             <Button className="hidden bg-accent text-accent-foreground hover:bg-accent/90 sm:inline-flex">
-              <Link href="/contact">Enquire Now</Link>
+              <Link href="/booking">Book Now</Link>
             </Button>
             <button
               type="button"

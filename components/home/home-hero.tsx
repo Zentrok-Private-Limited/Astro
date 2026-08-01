@@ -22,6 +22,11 @@ const slides = [
   title: "Guidance for Astrology and Horoscope",
   subtitle: "Receive personalized horoscope readings, astrological consultations, and effective remedies based on authentic Vedic astrology.",
 },
+{
+  image: "/images/slide4.png",
+  title: "Blessed Sawan Month: Book Your Online Rudrabhishek Puja",
+  subtitle: "Experience authentic Vedic rituals performed by expert Pandits live from home. Seek peace, prosperity, and spiritual growth.",
+},
 ]
 
 export function HomeHero() {

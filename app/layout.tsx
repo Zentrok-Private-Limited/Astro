@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import { company } from '@/lib/company';
 import ClientLayout from './ClientLayout';
 import './globals.css';
+import FloatingCTA from "@/components/floatingCTA";
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -38,7 +39,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`light ${playfair.variable} ${inter.variable}`}>
       <body className="bg-background font-sans antialiased">
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout>{children}
+
+        </ClientLayout>
+        <FloatingCTA />
       </body>
     </html>
   );

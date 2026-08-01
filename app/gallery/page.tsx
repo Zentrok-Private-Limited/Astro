@@ -17,7 +17,7 @@ const gallery = [
   { src: "/images/service-wedding.png", caption: "Wedding rituals" },
   { src: "/images/hero-diya.png", caption: "Aarti offering" },
   { src: "/images/exports-flowers.png", caption: "Fresh flower garlands" },
-  { src: "/images/exports-puja-items.png", caption: "Brass ritual items" },
+  { src: "/images/exports-pooja-items.png", caption: "Brass ritual items" },
   { src: "/images/foundation-meditation.png", caption: "Meditation gathering" },
 ]
 

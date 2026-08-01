@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export default function WealthandProsperity() {
-  const wealthPujas = [
+  const wealthpoojas = [
   {
   title: "Sri Sukta Homam",
   description:
@@ -28,7 +28,7 @@ export default function WealthandProsperity() {
 {
   title: "Sri Lakshmi Narayana Hridaya",
   description:
-    "A sacred recitation and puja dedicated to Lord Narayana and Goddess Lakshmi, performed to attain divine protection, financial stability, marital harmony, spiritual growth, and lasting prosperity.",
+    "A sacred recitation and pooja dedicated to Lord Narayana and Goddess Lakshmi, performed to attain divine protection, financial stability, marital harmony, spiritual growth, and lasting prosperity.",
   image: "/images/mahalakshmi.jpg",
   duration: "2 Hours",
   deity: "Goddess Mahalakshmi",
@@ -36,7 +36,7 @@ export default function WealthandProsperity() {
 {
   title: "Lakshmi Narayana Homam",
   description:
-    "A sacred homam and puja performed to seek the combined blessings of Lord Narayana and Goddess Lakshmi for health, happiness, prosperity, family harmony, and success in all aspects of life.",
+    "A sacred homam and pooja performed to seek the combined blessings of Lord Narayana and Goddess Lakshmi for health, happiness, prosperity, family harmony, and success in all aspects of life.",
   image: "/images/lakshminarayan.jpg",
   duration: "2–3 Hours",
   deity: "Lord Narayana & Goddess Lakshmi",
@@ -120,7 +120,7 @@ const steps = [
   {
     icon: CalendarDays,
     number: "01",
-    title: "Choose Your Puja",
+    title: "Choose Your pooja",
     text: "Browse our sacred rituals and select the one that best matches your spiritual intentions.",
   },
   {
@@ -133,7 +133,7 @@ const steps = [
     icon: Flame,
     number: "03",
     title: "Sacred Ritual Begins",
-    text: "Experienced Vedic priests perform your chosen puja with authentic mantras and traditional procedures.",
+    text: "Experienced Vedic priests perform your chosen pooja with authentic mantras and traditional procedures.",
   },
   {
     icon: Video,
@@ -162,8 +162,8 @@ const steps = [
 
               <span>/</span>
 
-              <Link href="/puja-services" className="hover:text-primary">
-                Puja Services
+              <Link href="/pooja-services" className="hover:text-primary">
+                pooja Services
               </Link>
 
               <span>/</span>
@@ -174,7 +174,7 @@ const steps = [
       </section>
 
 
-      <section id="pujas" className="bg-secondary/20">
+      <section id="poojas" className="bg-secondary/20">
       <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
@@ -183,7 +183,7 @@ const steps = [
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Wealth & Prosperity Pujas
+              Wealth & Prosperity poojas
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -192,40 +192,40 @@ const steps = [
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {wealthPujas.map((puja) => (
+            {wealthpoojas.map((pooja) => (
               <article
-                key={puja.title}
+                key={pooja.title}
                 className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="overflow-hidden">
                   <img
-                    src={puja.image}
-                    alt={puja.title}
+                    src={pooja.image}
+                    alt={pooja.title}
                     className="aspect-4/3 w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
 
                 <div className="p-7">
                   <h3 className="font-serif text-2xl text-primary">
-                    {puja.title}
+                    {pooja.title}
                   </h3>
 
                   <p className="mt-4 leading-7 text-muted-foreground">
-                    {puja.description}
+                    {pooja.description}
                   </p>
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                      {puja.deity}
+                      {pooja.deity}
                     </span>
 
                     <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                      {puja.duration}
+                      {pooja.duration}
                     </span>
                   </div>
 
                   <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                    Book this Puja
+                    Book this pooja
                   </button>
                 </div>
               </article>
@@ -246,7 +246,7 @@ const steps = [
     <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
       Since ancient times, Vedic traditions have revered wealth as a sacred
       blessing that supports a righteous, fulfilling, and prosperous life.
-      Through powerful yajnas, homams, and pujas dedicated to Goddess
+      Through powerful yajnas, homams, and poojas dedicated to Goddess
       Mahalakshmi, Lord Kubera, Lord Ganesha, and other revered deities,
       devotees seek divine grace for financial stability, business growth,
       career success, and lasting abundance.
@@ -271,7 +271,7 @@ const steps = [
       </span>
 
       <h2 className="mt-4 font-serif text-4xl text-primary">
-        Why Perform Wealth & Prosparity Pujas?
+        Why Perform Wealth & Prosparity poojas?
       </h2>
 
       <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -361,7 +361,7 @@ const steps = [
       </h2>
 
       <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-        From booking your preferred puja to receiving divine blessings,
+        From booking your preferred pooja to receiving divine blessings,
         we ensure every ritual is performed with authenticity,
         devotion, and complete transparency.
       </p>

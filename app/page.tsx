@@ -8,48 +8,48 @@ import { Button } from "@/components/ui/button";
 import { poojaServices, storeCategories, grahaRemedies } from "@/lib/content";
 import { motion } from "framer-motion";
 
-const pujaCategories = [
+const poojaCategories = [
   {
     title: "Health & Healing Rituals",
     subtitle: "For wellness, recovery & vitality",
     image: "images/health-heal.webp",
-    link:"/health-healing"
+    link: "/health-healing",
   },
   {
     title: "Wealth & Prosperity",
     subtitle: "Attract abundance & success",
     image: "/images/wealth.png",
-    link:"/wealth-prosperity"
+    link: "/wealth-prosperity",
   },
   {
     title: "Career & Education",
     subtitle: "Growth in studies & profession",
     image: "/images/career.png",
-    link:"/career-education-success"
+    link: "/career-education-success",
   },
   {
     title: "Marriage, Love & Relationships",
     subtitle: "Harmony and stronger bonds",
     image: "/images/love.webp",
-    link:"/love-marriage-relationships"
+    link: "/love-marriage-relationships",
   },
   {
     title: "Protection from Negativity",
     subtitle: "Remove obstacles & evil influences",
     image: "/images/protection.jpg",
-    link:"/health-healing"
+    link: "/protection-from-negativity",
   },
   {
     title: "Festivals & Special Occasions",
     subtitle: "Sacred rituals for every celebration",
     image: "/images/festival.webp",
-    link:"/health-healing"
+    link: "/health-healing",
   },
   {
     title: "Peace & Spiritual Growth",
     subtitle: "Inner peace and divine blessings",
     image: "/images/peace.webp",
-    link:"/health-healing"
+    link: "/health-healing",
   },
 ];
 
@@ -63,8 +63,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-8xl px-6">
           <div className="mb-5 text-center">
             <h2 className="font-serif text-lg text-primary md:text-2xl">
-              Select Sacred Pujas Curated for Health, Prosperity, Relationships,
-              Protection, Celebrations & Spiritual Well-being
+              Select Sacred Poojas Curated for Health, Prosperity,
+              Relationships, Protection, Celebrations & Spiritual Well-being
             </h2>
 
             <div className="mt-3 flex items-center justify-center gap-4">
@@ -75,39 +75,97 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-  {pujaCategories.map((item) => (
-    <Link
-      key={item.title}
-      href={item.link}
-      className="group overflow-hidden rounded-2xl border border-primary/15 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:shadow-xl"
-    >
-      <div className="overflow-hidden rounded-xl">
-        <img
-          src={item.image}
-          alt={item.title}
-          className="aspect-square w-full object-cover transition duration-500 group-hover:scale-110"
-        />
-      </div>
+            {poojaCategories.map((item) => (
+              <Link
+                key={item.title}
+                href={item.link}
+                className="group overflow-hidden rounded-2xl border border-primary/15 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:shadow-xl"
+              >
+                <div className="overflow-hidden rounded-xl">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="aspect-square w-full object-cover transition duration-500 group-hover:scale-110"
+                  />
+                </div>
 
-      <div className="pt-2 text-center">
-        <h3 className="mt-3 font-serif text-base font-semibold leading-tight text-primary">
-          {item.title}
-        </h3>
+                <div className="pt-2 text-center">
+                  <h3 className="mt-3 font-serif text-base font-semibold leading-tight text-primary">
+                    {item.title}
+                  </h3>
 
-        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-          {item.subtitle}
-        </p>
-      </div>
-    </Link>
-  ))}
-</div>
+                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                    {item.subtitle}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Puja services */}
+      <section className="mx-auto mt-16 mb-5 max-w-7xl px-6">
+        <div className="relative overflow-hidden rounded-[28px]">
+          {/* Video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/images/rudrabhishek.mp4" type="video/mp4" />
+          </video>
+
+          {/* Background Image */}
+          {/* <Image
+            src="/images/bg-banner1.png" // Your image path
+            alt="Sacred Temple Ritual"
+            fill
+            priority
+            className="object-cover"
+          /> */}
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/20" />
+
+          <div className="relative flex min-h-[320px] items-center px-8 py-10 md:px-14">
+            <div className="max-w-xl">
+              <span className="inline-block rounded-full bg-primary/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white">
+                🕉️ Shravan Special
+              </span>
+
+              <h2 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white md:text-4xl">
+                Book your
+                <span className="block text-[#E8C16A]">
+                  Sacred Rudrabhishek
+                </span>
+              </h2>
+
+              <p className="mt-4 text-base leading-7 text-white/80">
+                Celebrate the holy month of Shravan with an authentic
+                Rudrabhishek performed by experienced Vedic priests. Receive
+                personalized sankalp and divine blessings.
+              </p>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                <button className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90">
+                  Book Now
+                </button>
+
+                <button className="rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur hover:bg-white/20">
+                  View Rituals
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* pooja services */}
       <section className="mx-auto max-w-7xl px-6 py-20">
         <SectionHeading
-          eyebrow="Puja Performed"
+          eyebrow="pooja Performed"
           title="Sacred Ceremonies for Every Occasion"
           description="From weddings and housewarmings to powerful homas, our priests conduct each ritual with precision and devotion."
         />
@@ -131,7 +189,7 @@ export default function HomePage() {
         </div>
         <div className="mt-10 text-center">
           <Button
-            render={<Link href="/puja-services" />}
+            render={<Link href="/pooja-services" />}
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-8"
           >
@@ -220,8 +278,8 @@ export default function HomePage() {
 
         <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
           <Image
-            src="/images/exports-puja-items.png"
-            alt="Brass puja items"
+            src="/images/exports-pooja-items.png"
+            alt="Brass pooja items"
             width={640}
             height={420}
             className="h-56 w-full object-cover"
@@ -231,8 +289,8 @@ export default function HomePage() {
               The Store
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Deity idols, puja essentials, sacred jewellery and fresh flowers —
-              sourced with care and shipped worldwide for your rituals.
+              Deity idols, pooja essentials, sacred jewellery and fresh flowers
+              — sourced with care and shipped worldwide for your rituals.
             </p>
             <Button
               render={<Link href="/store" />}
@@ -297,7 +355,7 @@ export default function HomePage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-xl leading-relaxed text-white/90">
-              Whether you seek a puja, an astrological reading or spiritual
+              Whether you seek a pooja, an astrological reading or spiritual
               guidance, our priests are here to help you every step of the way.
             </p>
 

@@ -1,136 +1,106 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { CalendarDays, ClipboardPen, Flame, Video, Gift } from "lucide-react";
 import {
-  CalendarDays,
-  ClipboardPen,
-  Flame,
-  Video,
-  Gift,
-  Coins,
-  BriefcaseBusiness,
-  TrendingUp,
-  Wallet,
-  Gem,
+  Heart,
+  HeartHandshake,
+  Users,
   Sparkles,
+  ShieldCheck,
+  Flower2,
 } from "lucide-react";
 
-export default function CareerEducationSuccess() {
-  const careerpoojas = [
+export default function ProtectionFromNegativity() {
+  const negativitypoojas = [
     {
-      title: "Udyoga Narasimhar Homam",
+      title: "Navagraha Homam",
       description:
-        "A sacred homam dedicated to Lord Narasimha, performed to remove obstacles in career, secure employment opportunities, achieve professional success, and protect against negative influences.",
-      image: "/images/narsimbha.jpg",
+        "A sacred homam performed to pacify the nine planetary deities, helping remove astrological obstacles that may delay marriage and bringing harmony, stability, and auspiciousness into relationships.",
+      image: "/images/navgraha.jpg",
       duration: "2–3 Hours",
-      deity: "Lord Narasimha",
+      deity: "Navagrahas",
     },
     {
-      title: "Sri Ganapati Suktam",
+      title: "Manglik Dosh Parihara Homam",
       description:
-        "The sacred Ganapati Suktam is recited to invoke Lord Ganesha's blessings for the removal of obstacles, success in education and career, wisdom, and new beginnings.",
-      image: "/images/ganpati.jpg",
+        "A powerful Vedic ritual performed to reduce the effects of Mangal Dosha (Kuja Dosha), promoting compatibility, marital harmony, and the timely fulfillment of marriage prospects.",
+      image: "/images/mangal.jpg",
       duration: "2 Hours",
-      deity: "Lord Ganesha",
+      deity: "Lord Mangal (Mars)",
     },
     {
-      title: "Ganapati Sahasranama",
+      title: "Girija Kalyana",
       description:
-        "A devotional chanting of the thousand names of Lord Ganesha, performed to seek divine blessings for career growth, prosperity, wisdom, success, and the removal of all obstacles.",
-      image: "/images/ganpati2.jpg",
+        "A sacred ceremony celebrating the divine marriage of Lord Shiva and Goddess Parvati, performed to seek blessings for a suitable life partner, a happy marriage, and lasting marital bliss.",
+      image: "/images/shivparvati.jpg",
       duration: "2–3 Hours",
-      deity: "Lord Ganesha",
+      deity: "Lord Shiva & Goddess Parvati",
     },
     {
-      title: "Sri Hayagreeva Madhu Abhishekam",
+      title: "Swayamvara Parvati Homam",
       description:
-        "A special honey abhishekam offered to Lord Hayagreeva to enhance knowledge, memory, intelligence, academic excellence, and success in competitive examinations and professional pursuits.",
-      image: "/images/hayageeva.jpg",
+        "A highly revered homam dedicated to Goddess Parvati, performed to remove obstacles in marriage, attract a compatible life partner, and bless devotees with a joyful and successful married life.",
+      image: "/images/parvati.jpg",
       duration: "1 Hour",
-      deity: "Lord Hayagreeva",
+      deity: "Goddess Parvati",
     },
     {
-      title: "Budha Shanti Homam",
+      title: "Shashtiabdapoorti (80th Anniversary)",
       description:
-        "A Vedic homam performed to pacify the planet Budha (Mercury), improving communication, intelligence, analytical abilities, business success, and career advancement.",
-      image: "/images/buddha.jpg",
+        "A traditional Vedic celebration performed on completing sixty years of age, invoking divine blessings for renewed health, marital happiness, family harmony, longevity, and prosperity.",
+      image: "/images/oldanniversary.jpg",
       duration: "2 Hours",
-      deity: "Lord Budha (Mercury)",
-    },
-    {
-      title: "Medha Dakshina Murthy Homam",
-      description:
-        "A sacred homam dedicated to Lord Dakshinamurthy, performed to enhance wisdom, concentration, learning ability, career growth, and spiritual knowledge.",
-      image: "/images/DakshinaMurthy.jpg",
-      duration: "3 Hours",
-      deity: "Lord Dakshinamurthy",
-    },
-    {
-      title: "Hayagreeva Homam",
-      description:
-        "A powerful homam dedicated to Lord Hayagreeva, the deity of knowledge and wisdom, performed to bless students and professionals with intelligence, memory, learning, and career success.",
-      image: "/images/hayageeva.jpg",
-      duration: "3 Hours",
-      deity: "Lord Hayagreeva",
-    },
-    {
-      title: "Saraswati Homam",
-      description:
-        "A sacred homam dedicated to Goddess Saraswati to seek blessings for education, wisdom, creativity, eloquence, academic excellence, and success in career and the arts.",
-      image: "/images/saraswati.jpg",
-      duration: "3 Hours",
-      deity: "Goddess Saraswati",
+      deity: "Lord Shiva & Family Deities",
     },
   ];
-
   const benefits = [
     {
-      icon: BriefcaseBusiness,
-      title: "Career Growth",
+      icon: Heart,
+      title: "Suitable Life Partner",
       description:
-        "Seek divine blessings for promotions, professional advancement, job stability, and long-term career success.",
+        "Seek divine blessings to find a compatible life partner and attract a happy, fulfilling marriage.",
     },
     {
-      icon: TrendingUp,
-      title: "Employment Opportunities",
+      icon: HeartHandshake,
+      title: "Marital Harmony",
       description:
-        "Invoke positive energies to remove career obstacles and attract suitable job opportunities.",
+        "Strengthen love, understanding, trust, and mutual respect between couples for a peaceful married life.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Removal of Marriage Obstacles",
+      description:
+        "Perform sacred rituals to reduce the effects of doshas, delays, and other obstacles affecting marriage prospects.",
+    },
+    {
+      icon: Users,
+      title: "Healthy Relationships",
+      description:
+        "Invite divine grace to nurture stronger family bonds, meaningful relationships, and emotional well-being.",
+    },
+    {
+      icon: Flower2,
+      title: "Love & Togetherness",
+      description:
+        "Receive the blessings of Lord Shiva and Goddess Parvati for lifelong companionship, affection, and marital bliss.",
     },
     {
       icon: Sparkles,
-      title: "Success in Examinations",
+      title: "Peace & Positivity",
       description:
-        "Pray for focus, confidence, and excellent performance in competitive exams and academic pursuits.",
-    },
-    {
-      icon: Gem,
-      title: "Knowledge & Wisdom",
-      description:
-        "Receive the blessings of Lord Hayagreeva, Goddess Saraswati, and Lord Dakshinamurthy for learning, intelligence, and wisdom.",
-    },
-    {
-      icon: Coins,
-      title: "Skill & Confidence",
-      description:
-        "Enhance communication, decision-making, analytical abilities, and confidence for personal and professional growth.",
-    },
-    {
-      icon: Wallet,
-      title: "Removal of Obstacles",
-      description:
-        "Perform sacred rituals to overcome delays, setbacks, and challenges affecting education and career progress.",
+        "Fill your home and relationships with positive energy, harmony, and auspicious blessings through authentic Vedic rituals.",
     },
   ];
 
   const suitableFor = [
-    "Students preparing for board and competitive examinations",
-    "Job seekers looking for employment opportunities",
-    "Working professionals seeking promotions and career growth",
-    "Individuals facing obstacles or delays in their career",
-    "Students pursuing higher education or overseas studies",
-    "Entrepreneurs seeking wisdom for better decision-making",
-    "Professionals preparing for interviews and certifications",
-    "Anyone seeking knowledge, success, and overall professional excellence",
+    "Individuals seeking a suitable life partner",
+    "People experiencing delays in marriage",
+    "Those affected by Manglik (Kuja) Dosha or other marriage-related doshas",
+    "Couples wishing to strengthen love and mutual understanding",
+    "Families praying for the successful marriage of their children",
+    "Newly married couples seeking lifelong harmony and happiness",
+    "Couples celebrating important marital milestones",
+    "Anyone seeking divine blessings for love, marriage, and lasting relationships",
   ];
 
   const steps = [
@@ -183,7 +153,7 @@ export default function CareerEducationSuccess() {
 
             <span>/</span>
 
-            <span className="text-primary">Career & Education Success</span>
+            <span className="text-primary">Love, Marriage and Relationships</span>
           </nav>
         </div>
       </section>
@@ -197,20 +167,20 @@ export default function CareerEducationSuccess() {
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Career & Education Success poojas
+              Marriage, Love & Relationship poojas
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-              Seek the divine blessings of Lord Ganesha, Lord Hayagreeva,
-              Goddess Saraswati, Lord Dakshinamurthy, and Lord Narasimha to
-              overcome obstacles, enhance knowledge and wisdom, achieve academic
-              excellence, secure career growth, and attain lasting professional
-              success.
+              Seek the divine blessings of Lord Shiva, Goddess Parvati, Lord
+              Ganesha, the Navagrahas, and other revered deities to remove
+              obstacles in marriage, attract a suitable life partner, strengthen
+              love and companionship, foster marital harmony, and nurture
+              lasting, fulfilling relationships.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {careerpoojas.map((pooja) => (
+            {negativitypoojas.map((pooja) => (
               <article
                 key={pooja.title}
                 className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
@@ -252,36 +222,36 @@ export default function CareerEducationSuccess() {
         </div>
       </section>
       <section className="py-20">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <span className="font-semibold uppercase tracking-[0.3em] text-primary">
-            About These Rituals
-          </span>
+  <div className="mx-auto max-w-5xl px-6 text-center">
+    <span className="font-semibold uppercase tracking-[0.3em] text-primary">
+      About These Rituals
+    </span>
 
-          <h2 className="mt-5 font-serif text-4xl text-primary">
-            Attain Knowledge, Career Growth & Academic Excellence
-          </h2>
+    <h2 className="mt-5 font-serif text-4xl text-primary">
+      Strengthen Love, Harmony & Sacred Relationships
+    </h2>
 
-          <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
-            Since ancient times, Vedic traditions have emphasized that
-            knowledge, wisdom, and righteous effort are the foundation of
-            success. Through sacred yajnas, homams, and poojas dedicated to Lord
-            Ganesha, Lord Hayagreeva, Goddess Saraswati, Lord Dakshinamurthy,
-            Lord Narasimha, and other revered deities, devotees seek divine
-            blessings for academic excellence, career advancement, professional
-            growth, and the removal of obstacles that hinder success.
-          </p>
+    <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
+      Since ancient times, Vedic traditions have regarded marriage as a sacred
+      union founded on love, trust, mutual respect, and divine blessings.
+      Through powerful yajnas, homams, and poojas dedicated to Lord Shiva,
+      Goddess Parvati, Lord Ganesha, the Navagrahas, and other revered deities,
+      devotees seek blessings for finding a suitable life partner, overcoming
+      marriage-related obstacles, strengthening relationships, and enjoying a
+      happy, harmonious married life.
+    </p>
 
-          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-muted-foreground">
-            Every ritual is performed by experienced Vedic priests following
-            authentic traditions with a personalized sankalp in your name.
-            Whether you are preparing for examinations, seeking employment,
-            aspiring for a promotion, pursuing higher education, or striving for
-            success in your profession, these sacred ceremonies invoke divine
-            grace for wisdom, confidence, focus, and lasting success in every
-            stage of life.
-          </p>
-        </div>
-      </section>
+    <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-muted-foreground">
+      Every ritual is performed by experienced Vedic priests following
+      authentic traditions with a personalized sankalp in your name. Whether
+      you are praying for a suitable marriage alliance, seeking relief from
+      delays or doshas, strengthening the bond with your partner, or celebrating
+      important milestones in married life, these sacred ceremonies invoke
+      divine grace for love, companionship, family harmony, and lifelong
+      happiness.
+    </p>
+  </div>
+</section>
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
@@ -290,7 +260,7 @@ export default function CareerEducationSuccess() {
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Why Perform Career, Education and Success poojas?
+              Why Perform Love Marriage and Relationship poojas?
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">

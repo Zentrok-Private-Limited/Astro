@@ -22,7 +22,7 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/70">
-              Authentic Vedic astrology and puja services performed by experienced priests,
+              Authentic Vedic astrology and pooja services performed by experienced priests,
               available to devotees around the world.
             </p>
             <div className="mt-6 flex items-center gap-3">
@@ -98,8 +98,8 @@ export function SiteFooter() {
             <Link href="/privacy-policy" className="transition-colors hover:text-accent">
               Privacy Policy
             </Link>
-            <Link href="/copyright-policy" className="transition-colors hover:text-accent">
-              Copyright Policy
+            <Link href="/refund-policy" className="transition-colors hover:text-accent">
+              Return and Cancellation Policy
             </Link>
           </div>
         </div>

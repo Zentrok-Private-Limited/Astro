@@ -8,17 +8,17 @@ import { poojaServices, otherPoojas } from "@/lib/content"
 import { company } from "@/lib/company"
 
 export const metadata: Metadata = {
-  title: "Puja Services",
-  description: `Explore the puja and homa services offered by ${company.name}, available online worldwide and in person.`,
+  title: "pooja Services",
+  description: `Explore the pooja and homa services offered by ${company.name}, available online worldwide and in person.`,
 }
 
-export default function PujaServicesPage() {
+export default function poojaServicesPage() {
   return (
     <>
       <PageHero
-        title="Puja Services"
+        title="pooja Services"
         subtitle="Services offered by our priests, available worldwide online (Zoom, Google Meet) and in person."
-        crumbs={[{ label: "Home", href: "/" }, { label: "Puja Services" }]}
+        crumbs={[{ label: "Home", href: "/" }, { label: "pooja Services" }]}
       />
 
       {/* Intro banner */}
@@ -40,7 +40,7 @@ export default function PujaServicesPage() {
               Services Offered by Our Priests
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Our certified Vedic priests conduct pujas and homas both within the temple and at
+              Our certified Vedic priests conduct poojas and homas both within the temple and at
               locations of your choosing. Every ceremony is prepared with the complete set of
               materials required, so you can take part with a calm and focused mind — wherever in
               the world you are.
@@ -52,7 +52,7 @@ export default function PujaServicesPage() {
       {/* Featured services */}
       <section className="bg-secondary/50">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <SectionHeading eyebrow="Ceremonies" title="Featured Pujas &amp; Homas" />
+          <SectionHeading eyebrow="Ceremonies" title="Featured poojas &amp; Homas" />
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {poojaServices.map((s) => (
               <article key={s.title} className="rounded-xl border border-border bg-card p-6">

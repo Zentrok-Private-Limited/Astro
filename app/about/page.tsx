@@ -51,7 +51,7 @@ export default function AboutPage() {
             </p>
             <p>
               We offer a community-driven place of worship, sustained by volunteers, where devotees
-              can take part in empowering sevas and pujas of their chosen deity and receive divine
+              can take part in empowering sevas and poojas of their chosen deity and receive divine
               grace. Alongside spiritual practice, we cherish and preserve our cultural arts,
               including classical music and dance.
             </p>

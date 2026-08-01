@@ -9,7 +9,7 @@ import { company } from "@/lib/company"
 
 export const metadata: Metadata = {
   title: "Store",
-  description: `Shop deity idols, puja essentials, sacred jewellery and fresh flowers from ${company.name}, shipped worldwide.`,
+  description: `Shop deity idols, pooja essentials, sacred jewellery and fresh flowers from ${company.name}, shipped worldwide.`,
 }
 
 export default function StorePage() {
@@ -17,7 +17,7 @@ export default function StorePage() {
     <>
       <PageHero
         title={`${company.name} Store`}
-        subtitle="Deity idols, puja essentials, sacred jewellery and fresh flowers — sourced with care and shipped worldwide."
+        subtitle="Deity idols, pooja essentials, sacred jewellery and fresh flowers — sourced with care and shipped worldwide."
         crumbs={[{ label: "Home", href: "/" }, { label: "Store" }]}
       />
 

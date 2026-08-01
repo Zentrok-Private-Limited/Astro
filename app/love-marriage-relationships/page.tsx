@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 export default function LoveMarriageRelationship() {
-  const marriagePujas = [
+  const marriagepoojas = [
     {
       title: "Navagraha Homam",
       description:
@@ -107,7 +107,7 @@ export default function LoveMarriageRelationship() {
     {
       icon: CalendarDays,
       number: "01",
-      title: "Choose Your Puja",
+      title: "Choose Your pooja",
       text: "Browse our sacred rituals and select the one that best matches your spiritual intentions.",
     },
     {
@@ -120,7 +120,7 @@ export default function LoveMarriageRelationship() {
       icon: Flame,
       number: "03",
       title: "Sacred Ritual Begins",
-      text: "Experienced Vedic priests perform your chosen puja with authentic mantras and traditional procedures.",
+      text: "Experienced Vedic priests perform your chosen pooja with authentic mantras and traditional procedures.",
     },
     {
       icon: Video,
@@ -147,8 +147,8 @@ export default function LoveMarriageRelationship() {
 
             <span>/</span>
 
-            <Link href="/puja-services" className="hover:text-primary">
-              Puja Services
+            <Link href="/pooja-services" className="hover:text-primary">
+              pooja Services
             </Link>
 
             <span>/</span>
@@ -158,7 +158,7 @@ export default function LoveMarriageRelationship() {
         </div>
       </section>
 
-      <section id="pujas" className="bg-secondary/20">
+      <section id="poojas" className="bg-secondary/20">
         <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
@@ -167,7 +167,7 @@ export default function LoveMarriageRelationship() {
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Marriage, Love & Relationship Pujas
+              Marriage, Love & Relationship poojas
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -180,40 +180,40 @@ export default function LoveMarriageRelationship() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {marriagePujas.map((puja) => (
+            {marriagepoojas.map((pooja) => (
               <article
-                key={puja.title}
+                key={pooja.title}
                 className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="overflow-hidden">
                   <img
-                    src={puja.image}
-                    alt={puja.title}
+                    src={pooja.image}
+                    alt={pooja.title}
                     className="aspect-4/3 w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
 
                 <div className="p-7">
                   <h3 className="font-serif text-2xl text-primary">
-                    {puja.title}
+                    {pooja.title}
                   </h3>
 
                   <p className="mt-4 leading-7 text-muted-foreground">
-                    {puja.description}
+                    {pooja.description}
                   </p>
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                      {puja.deity}
+                      {pooja.deity}
                     </span>
 
                     <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                      {puja.duration}
+                      {pooja.duration}
                     </span>
                   </div>
 
                   <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                    Book this Puja
+                    Book this pooja
                   </button>
                 </div>
               </article>
@@ -234,7 +234,7 @@ export default function LoveMarriageRelationship() {
     <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
       Since ancient times, Vedic traditions have regarded marriage as a sacred
       union founded on love, trust, mutual respect, and divine blessings.
-      Through powerful yajnas, homams, and pujas dedicated to Lord Shiva,
+      Through powerful yajnas, homams, and poojas dedicated to Lord Shiva,
       Goddess Parvati, Lord Ganesha, the Navagrahas, and other revered deities,
       devotees seek blessings for finding a suitable life partner, overcoming
       marriage-related obstacles, strengthening relationships, and enjoying a
@@ -260,7 +260,7 @@ export default function LoveMarriageRelationship() {
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Why Perform Love Marriage and Relationship Pujas?
+              Why Perform Love Marriage and Relationship poojas?
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -333,7 +333,7 @@ export default function LoveMarriageRelationship() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-              From booking your preferred puja to receiving divine blessings, we
+              From booking your preferred pooja to receiving divine blessings, we
               ensure every ritual is performed with authenticity, devotion, and
               complete transparency.
             </p>

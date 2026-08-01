@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export default function HealthHealingHero() {
-  const healthPujas = [
+  const healthpoojas = [
     {
       title: "Maha Mrityunjaya Homam",
       description:
@@ -28,7 +28,7 @@ export default function HealthHealingHero() {
       deity: "Lord Shiva",
     },
     {
-      title: "Dhanvantari Puja",
+      title: "Dhanvantari pooja",
       description:
         "Dedicated to Lord Dhanvantari, the divine physician, for healing, vitality, and overall wellness.",
       image: "/images/lord-dhanvantri.jpg",
@@ -139,7 +139,7 @@ const steps = [
   {
     icon: CalendarDays,
     number: "01",
-    title: "Choose Your Puja",
+    title: "Choose Your pooja",
     text: "Browse our sacred rituals and select the one that best matches your spiritual intentions.",
   },
   {
@@ -152,7 +152,7 @@ const steps = [
     icon: Flame,
     number: "03",
     title: "Sacred Ritual Begins",
-    text: "Experienced Vedic priests perform your chosen puja with authentic mantras and traditional procedures.",
+    text: "Experienced Vedic priests perform your chosen pooja with authentic mantras and traditional procedures.",
   },
   {
     icon: Video,
@@ -181,8 +181,8 @@ const steps = [
 
               <span>/</span>
 
-              <Link href="/puja-services" className="hover:text-primary">
-                Puja Services
+              <Link href="/pooja-services" className="hover:text-primary">
+                pooja Services
               </Link>
 
               <span>/</span>
@@ -193,7 +193,7 @@ const steps = [
       </section>
 
 
-      <section id="pujas" className="bg-secondary/20">
+      <section id="poojas" className="bg-secondary/20">
       <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
@@ -202,7 +202,7 @@ const steps = [
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Popular Health & Healing Pujas
+              Popular Health & Healing poojas
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -213,40 +213,40 @@ const steps = [
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {healthPujas.map((puja) => (
+            {healthpoojas.map((pooja) => (
               <article
-                key={puja.title}
+                key={pooja.title}
                 className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="overflow-hidden">
                   <img
-                    src={puja.image}
-                    alt={puja.title}
+                    src={pooja.image}
+                    alt={pooja.title}
                     className="aspect-4/3 w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
 
                 <div className="p-7">
                   <h3 className="font-serif text-2xl text-primary">
-                    {puja.title}
+                    {pooja.title}
                   </h3>
 
                   <p className="mt-4 leading-7 text-muted-foreground">
-                    {puja.description}
+                    {pooja.description}
                   </p>
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                      {puja.deity}
+                      {pooja.deity}
                     </span>
 
                     <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                      {puja.duration}
+                      {pooja.duration}
                     </span>
                   </div>
 
                   <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                    Book this Puja
+                    Book this pooja
                   </button>
                 </div>
               </article>
@@ -267,7 +267,7 @@ const steps = [
           <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
             Health has always been regarded as one of life's greatest blessings.
             Across generations, Vedic traditions have prescribed sacred yajnas,
-            homams, and pujas to seek divine grace for physical strength,
+            homams, and poojas to seek divine grace for physical strength,
             emotional balance, longevity, and recovery from illness. These
             rituals are performed with authentic Vedic procedures, sacred
             mantras, and personalized sankalp to pray for peace, protection,
@@ -285,7 +285,7 @@ const steps = [
       </span>
 
       <h2 className="mt-4 font-serif text-4xl text-primary">
-        Why Perform Health & Healing Pujas?
+        Why Perform Health & Healing poojas?
       </h2>
 
       <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -375,7 +375,7 @@ const steps = [
       </h2>
 
       <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-        From booking your preferred puja to receiving divine blessings,
+        From booking your preferred pooja to receiving divine blessings,
         we ensure every ritual is performed with authenticity,
         devotion, and complete transparency.
       </p>
