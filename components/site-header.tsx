@@ -1,38 +1,38 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu, X, Phone, Sun } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { company } from "@/lib/company"
-import { mainNav } from "@/lib/navigation"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, X, Phone, Sun } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { company } from "@/lib/company";
+import { mainNav } from "@/lib/navigation";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export function SiteHeader() {
-  const [open, setOpen] = useState(false)
-  const pathname = usePathname()
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full">
       {/* Top utility bar */}
       <div className="hidden bg-primary text-primary-foreground md:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 text-sm">
-          <p className="text-primary-foreground/80">
-            Worldwide online &amp; in-person Vedic services — Zoom &amp; Google Meet available
-          </p>
-          {/* <div className="flex items-center gap-6">
-            <a
-              href={`tel:${company.phone.replace(/[^+\d]/g, "")}`}
-              className="flex items-center gap-2 transition-colors hover:text-accent"
-            >
-              <Phone className="size-4" aria-hidden="true" />
-              {company.phone}
-            </a>
-            <a href={`mailto:${company.email}`} className="transition-colors hover:text-accent">
-              {company.email}
-            </a>
-          </div> */}
+        <div className="mx-auto flex items-center justify-center px-2 py-2 overflow-hidden">
+          <motion.p
+            className="font-bold text-amber-200 whitespace-nowrap"
+            animate={{
+  x: [-450, 450, -450],
+}}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            Worldwide online pooja and astro services — Zoom &amp; Google Meet
+            available
+          </motion.p>
         </div>
       </div>
 
@@ -53,9 +53,15 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+          <nav
+            className="hidden items-center gap-1 lg:flex"
+            aria-label="Main navigation"
+          >
             {mainNav.map((item) => {
-              const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href)
+              const active =
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
               return (
                 <Link
                   key={item.href}
@@ -69,7 +75,7 @@ export function SiteHeader() {
                 >
                   {item.label}
                 </Link>
-              )
+              );
             })}
           </nav>
 
@@ -98,7 +104,9 @@ export function SiteHeader() {
             <ul className="flex flex-col gap-1">
               {mainNav.map((item) => {
                 const active =
-                  item.href === "/" ? pathname === "/" : pathname.startsWith(item.href)
+                  item.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(item.href);
                 return (
                   <li key={item.href}>
                     <Link
@@ -114,12 +122,12 @@ export function SiteHeader() {
                       {item.label}
                     </Link>
                   </li>
-                )
+                );
               })}
             </ul>
           </nav>
         )}
       </div>
     </header>
-  )
+  );
 }

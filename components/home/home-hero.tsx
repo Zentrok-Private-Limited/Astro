@@ -69,14 +69,14 @@ export function HomeHero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="/puja-services">Explore Services</Link>
+              <Link href="/pooja-services">Explore Services</Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/80"
             >
-              <Link href="/contact">Book a Consultation</Link>
+              <Link href="/booking">Book a Consultation</Link>
             </Button>
           </div>
         </div>

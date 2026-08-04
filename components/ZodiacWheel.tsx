@@ -84,7 +84,7 @@ export default function ZodiacWheel() {
         className="relative z-20"
       >
         <Image
-          src="/images/om3.png"
+          src="/images/om.png"
           alt="Astrology Wheel"
           width={200}
           height={200}

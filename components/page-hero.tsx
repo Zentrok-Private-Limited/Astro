@@ -10,12 +10,16 @@ type Props = {
 
 export function PageHero({ title, subtitle, crumbs }: Props) {
   return (
-    <section 
-    className="relative overflow-hidden text-primary-foreground"
-    style={{
+   <section
+  className="relative overflow-hidden text-primary-foreground"
+  style={{
     backgroundImage: "url('/images/bg-hero.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   }}
-    >
+>
+  <div className="absolute inset-0 bg-black/40" />
       <div
         className="pointer-events-none absolute inset-0 opacity-20"
         style={{

@@ -5,7 +5,7 @@ export const poojaServices = [
       "One of life's most significant milestones, marking the sacred transition into married life with time-honoured Vedic rites.",
   },
   {
-    title: "Satyanarayana Puja",
+    title: "Satyanarayana Pooja",
     description:
       "Performed to clear obstacles and negative energy, inviting prosperity, harmony and lasting success into the home.",
   },
@@ -15,12 +15,12 @@ export const poojaServices = [
       "A powerful fire ritual invoking divine protection, renewed strength and victory over adversity and ill health.",
   },
   {
-    title: "Rudrabhishek Puja",
+    title: "Rudrabhishek Pooja",
     description:
       "A profound worship of Lord Shiva to bless devotees with clarity of mind, good health and freedom from negativity.",
   },
   {
-    title: "Bhoomi Puja",
+    title: "Bhoomi Pooja",
     description:
       "Offered to Mother Earth and the guardians of direction before construction, removing Vastu dosha from land and plots.",
   },
@@ -32,17 +32,19 @@ export const poojaServices = [
 ]
 
 export const otherPoojas = [
-  "Birthday Puja",
+  "Birthday Pooja",
   "Namakarana (Naming)",
   "Simantonnayana (Baby Shower)",
   "Annaprashana (First Grains)",
   "Griha Pravesh (Housewarming)",
+  "Vastu Pooja",
+  "Vehicle (Car) Pooja",
   "Mundana (First Haircut)",
   "Upanayana (Sacred Thread)",
   "Ayushya Homa",
-  "Ganapati Homa",
+  "Ganapati Pooja",
   "Navagraha Shanti",
-]
+];
 
 export const foundationPrograms = [
   {
@@ -80,9 +82,9 @@ export const storeCategories = [
     description: "Handcrafted deity idols in brass, panchaloha and marble.",
   },
   {
-    title: "Puja Essentials",
+    title: "Pooja Essentials",
     count: "13 Products",
-    image: "/images/exports-puja-items.png",
+    image: "/images/exports-pooja-items.png",
     description: "Lamps, bells, incense and everything for daily worship.",
   },
   {

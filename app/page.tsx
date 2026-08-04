@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { poojaServices, storeCategories, grahaRemedies } from "@/lib/content";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const poojaCategories = [
   {
@@ -53,7 +54,61 @@ const poojaCategories = [
   },
 ];
 
+const poojaServicesCategories = [
+  {
+    title: "God & Goddess Poojas",
+    description:
+      "Sacred rituals dedicated to Lord Shiva, Ganesha, Vishnu, Lakshmi, Durga, Hanuman, Saraswati, and other divine deities.",
+    image: "/images/categories/god&goddesspooja.jpg",
+    href: "/pooja-services/god-goddess-poojas",
+  },
+  {
+    title: "Festival Poojas",
+    description:
+      "Celebrate Diwali, Navratri, Ganesh Chaturthi, Janmashtami, Holi, and other festivals with authentic Vedic rituals.",
+    image: "/images/categories/festivalpooja.jpg",
+    href: "/pooja-services/festival-poojas",
+  },
+  {
+    title: "Special Occasion Poojas",
+    description:
+      "From weddings and housewarmings to naming ceremonies, birthdays, anniversaries, and other auspicious occasions.",
+    image: "/images/categories/occassionpooja.jpg",
+    href: "/pooja-services/special-occasion-poojas",
+  },
+  {
+    title: "Rudrabhishek Pooja",
+    description:
+      "Experience the divine blessings of Lord Shiva through Rudrabhishek, Maha Mrityunjaya Jaap, and sacred Shiva rituals.",
+    image: "/images/categories/rudrabhishek.jpg",
+    href: "/pooja-services/rudrabhishek-poojas",
+  },
+  {
+    title: "Special Sacred Poojas",
+    description:
+      "Experience revered temple and deity-specific rituals including Baglamukhi, Kamakhya Devi, Mahakal, Jagannath, and Maa Vaishno Devi Poojas, performed with authentic Vedic traditions and devotion.",
+    image: "/images/categories/sacred-pooja.jpg",
+    href: "/pooja-services/special-sacred-poojas",
+  },
+  {
+    title: "Temple Poojas",
+    description:
+      "Book temple rituals, Abhishekam, Archana, Homam, and special Sevas performed by experienced temple priests.",
+    image: "/images/categories/temple.jpg",
+    href: "/temple-poojas",
+  },
+  {
+    title: "Astrology Consultation",
+    description:
+      "Receive expert Vedic astrology guidance, horoscope analysis, gemstone recommendations, and spiritual remedies.",
+    image: "/images/categories/astrology.jpg",
+    href: "/astro-services",
+  },
+];
+
 export default function HomePage() {
+  const router = useRouter();
+
   return (
     <>
       <HomeHero />
@@ -63,8 +118,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-8xl px-6">
           <div className="mb-5 text-center">
             <h2 className="font-serif text-lg text-primary md:text-2xl">
-              Select Sacred Poojas Curated for Health, Prosperity,
-              Relationships, Protection, Celebrations & Spiritual Well-being
+              Find the Perfect Pooja for Your Needs
             </h2>
 
             <div className="mt-3 flex items-center justify-center gap-4">
@@ -127,17 +181,24 @@ export default function HomePage() {
           /> */}
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/20" />
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-black/20" />
 
-          <div className="relative flex min-h-[320px] items-center px-8 py-10 md:px-14">
+          <div className="relative flex min-h-80 items-center px-8 py-10 md:px-14">
             <div className="max-w-xl">
-              <span className="inline-block rounded-full bg-primary/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white">
-                🕉️ Shravan Special
+              <span className="inline-flex items-center gap-2 rounded-full bg-background px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                <Image
+                  src="/images/om.png"
+                  alt="Om"
+                  width={16}
+                  height={16}
+                  className="object-contain"
+                />
+                Shravan Month Special
               </span>
 
               <h2 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white md:text-4xl">
                 Book your
-                <span className="block text-[#E8C16A]">
+                <span className="block text-[#e7b241]">
                   Sacred Rudrabhishek
                 </span>
               </h2>
@@ -145,16 +206,22 @@ export default function HomePage() {
               <p className="mt-4 text-base leading-7 text-white/80">
                 Celebrate the holy month of Shravan with an authentic
                 Rudrabhishek performed by experienced Vedic priests. Receive
-                personalized sankalp and divine blessings.
+                personalized sankalp prashad and divine blessings.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
-                <button className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90">
-                  Book Now
+                <button
+                  onClick={() => router.push("/booking")}
+                  className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-foreground transition hover:opacity-90"
+                >
+                  Book your Rudrabhishek
                 </button>
 
-                <button className="rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur hover:bg-white/20">
-                  View Rituals
+                <button
+                  onClick={() => router.push("/pooja-services")}
+                  className="rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur hover:bg-white/20"
+                >
+                  View Services
                 </button>
               </div>
             </div>
@@ -163,39 +230,58 @@ export default function HomePage() {
       </section>
 
       {/* pooja services */}
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <SectionHeading
-          eyebrow="pooja Performed"
-          title="Sacred Ceremonies for Every Occasion"
-          description="From weddings and housewarmings to powerful homas, our priests conduct each ritual with precision and devotion."
-        />
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {poojaServices.map((s) => (
-            <article
-              key={s.title}
-              className="group rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
-            >
-              <span className="flex size-11 items-center justify-center rounded-lg bg-primary text-accent">
-                <Flame className="size-5" aria-hidden="true" />
-              </span>
-              <h3 className="mt-4 font-serif text-xl font-semibold text-primary">
-                {s.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {s.description}
-              </p>
-            </article>
-          ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Button
-            render={<Link href="/pooja-services" />}
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8"
-          >
-            View All Services
-            <ArrowRight className="ml-2 size-4" />
-          </Button>
+      <section className="relative overflow-hidden py-24">
+        {/* Background Decoration */}
+        <div className="absolute inset-0 -z-10 bg-linear-to-b from-secondary/30 via-background to-background" />
+
+        <div className="mx-auto max-w-7xl px-6">
+          <SectionHeading
+            eyebrow="Explore Categories"
+            title="Find the Right Spiritual Service"
+            description="Browse our carefully curated categories of poojas, temple rituals and astrology services performed by experienced Vedic priests."
+          />
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {poojaServicesCategories.map((category) => (
+              <Link
+                key={category.title}
+                href={category.href}
+                className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 hover:shadow-2xl"
+              >
+                {/* Image */}
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={category.image}
+                    alt={category.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-primary/25 to-transparent" />
+
+                  {/* Title on Image */}
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="font-serif text-3xl font-semibold text-white">
+                      {category.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-7">
+                  <p className="text-sm leading-7 text-muted-foreground">
+                    {category.description}
+                  </p>
+
+                  <div className="mt-6 flex items-center gap-2 font-semibold text-primary transition-all group-hover:gap-3">
+                    Explore Category
+                    <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
