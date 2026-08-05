@@ -62,7 +62,7 @@ const poojaServicesCategories = [
     description:
       "Receive expert Vedic astrology guidance, horoscope analysis, gemstone recommendations, and spiritual remedies.",
     image: "/images/categories/astrology.jpg",
-    href: "/astro-services",
+    href: "/astrology",
   },
   
   

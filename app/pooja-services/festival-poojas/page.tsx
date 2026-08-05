@@ -36,7 +36,7 @@ export const FestivalPoojas = [
   {
     title: "Radha Ashtami Pooja",
     description: "Seek the blessings of Shri Radha Rani for love, devotion, harmony, and spiritual growth.",
-    image: "/images/festivals/radha-ashtami.jpg",
+    image: "/images/festivals/radha-ashtami.webp",
   },
   {
     title: "Ganesh Chaturthi Pooja",
@@ -159,11 +159,6 @@ export const FestivalPoojas = [
     image: "/images/festivals/tulsi-vivah.jpg",
   },
   {
-    title: "Dev Diwali Pooja",
-    description: "Celebrate the divine festival of lights in devotion to Lord Shiva and the sacred Ganga.",
-    image: "/images/festivals/dev-diwali.jpg",
-  },
-  {
     title: "Kartik Purnima Pooja",
     description: "Observe Kartik Purnima with sacred rituals for spiritual merit and prosperity.",
     image: "/images/festivals/kartik-purnima.jpg",
@@ -177,36 +172,6 @@ export const FestivalPoojas = [
     title: "Lohri Pooja",
     description: "Celebrate the harvest festival with bonfire rituals for happiness and abundance.",
     image: "/images/festivals/lohri.jpg",
-  },
-  {
-    title: "Vat Savitri Pooja",
-    description: "Sacred worship observed by married women for the longevity and well-being of their husbands.",
-    image: "/images/festivals/vat-savitri.jpg",
-  },
-  {
-    title: "Varalakshmi Vratam",
-    description: "Invoke Goddess Lakshmi's blessings for wealth, prosperity, and family happiness.",
-    image: "/images/festivals/varalakshmi.jpg",
-  },
-  {
-    title: "Rishi Panchami Pooja",
-    description: "Traditional rituals performed to honor the Sapta Rishis and seek spiritual purification.",
-    image: "/images/festivals/rishi-panchami.jpg",
-  },
-  {
-    title: "Skanda Shashti Pooja",
-    description: "Dedicated worship of Lord Kartikeya for courage, victory, and protection.",
-    image: "/images/festivals/skanda-shashti.jpg",
-  },
-  {
-    title: "Vaikuntha Ekadashi Pooja",
-    description: "Sacred Vishnu worship on the auspicious Vaikuntha Ekadashi for liberation and divine blessings.",
-    image: "/images/festivals/vaikuntha-ekadashi.jpg",
-  },
-  {
-    title: "Nirjala Ekadashi Pooja",
-    description: "Observe the sacred Ekadashi fast and worship Lord Vishnu for spiritual merit and prosperity.",
-    image: "/images/festivals/nirjala-ekadashi.jpg",
   },
 ];
 

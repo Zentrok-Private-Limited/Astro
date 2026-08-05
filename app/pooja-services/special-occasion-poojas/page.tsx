@@ -7,7 +7,7 @@ export const OccasionPoojas = [
     title: "Birthday Pooja",
     description:
       "Celebrate your birthday with sacred Vedic rituals seeking health, happiness, longevity, and divine blessings.",
-    image: "/images/occasions/birthday-pooja.jpg",
+    image: "/images/occasions/birthday-pooja.webp",
   },
   {
     title: "Wedding Anniversary Pooja",
@@ -37,13 +37,13 @@ export const OccasionPoojas = [
     title: "Mundan Sanskar",
     description:
       "Traditional first haircut ceremony performed to seek good health, longevity, and spiritual purification.",
-    image: "/images/occasions/mundan-pooja.jpg",
+    image: "/images/occasions/mundan-pooja.webp",
   },
   {
     title: "Upanayan (Janeu) Sanskar",
     description:
       "Sacred thread ceremony performed according to Vedic traditions for spiritual growth and learning.",
-    image: "/images/occasions/upanayan-pooja.jpg",
+    image: "/images/occasions/upanayan-pooja.webp",
   },
   {
     title: "Griha Pravesh Pooja",
@@ -79,19 +79,19 @@ export const OccasionPoojas = [
     title: "Factory & Shop Opening Pooja",
     description:
       "Start your new venture with auspicious rituals for prosperity, success, and uninterrupted growth.",
-    image: "/images/occasions/shop-opening-pooja.jpg",
+    image: "/images/occasions/shop-opening-pooja.png",
   },
   {
     title: "Navagraha Pooja",
     description:
       "Seek the blessings of the nine celestial planets to reduce doshas and attract peace, prosperity, and success.",
-    image: "/images/occasions/navagraha-pooja.jpg",
+    image: "/images/navgraha.jpg",
   },
   {
     title: "Ayushya Homa",
     description:
       "A sacred homa performed to pray for long life, good health, and overall well-being.",
-    image: "/images/occasions/ayushya-homa.jpg",
+    image: "/images/ayushhomam.jpg",
   },
 ];
 

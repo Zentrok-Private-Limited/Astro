@@ -19,72 +19,151 @@ import {
 
 export default function HealthHealingHero() {
   const healthpoojas = [
-    {
-      title: "Maha Mrityunjaya Homam",
-      description:
-        "Performed to seek Lord Shiva's blessings for good health, longevity, protection from illness, and inner strength.",
-      image: "/images/shiva.jpg",
-      duration: "3–4 Hours",
-      deity: "Lord Shiva",
-    },
-    {
-      title: "Dhanvantari pooja",
-      description:
-        "Dedicated to Lord Dhanvantari, the divine physician, for healing, vitality, and overall wellness.",
-      image: "/images/lord-dhanvantri.jpg",
-      duration: "2 Hours",
-      deity: "Lord Dhanvantari",
-    },
-     {
-  title: "Sri Pavamana Suktam Parayan",
-  description:
-    "A sacred parayan dedicated to Pavamana Swaroopa Sri Hanuman, performed to seek divine purification, courage, protection from negative influences, inner strength, and overall well-being.",
-    image: "/images/hanuman.jpg",
-    duration: "2–3 Hours",
-  deity: "Sri Hanuman",
-},
   {
-    title: "Aditya Hridayam Parayan",
+    title: "Hanuman Bahuk Paath for Mysterious / Unknown Disease",
     description:
-      "A powerful recitation dedicated to Lord Surya for strength, vitality, confidence, mental clarity, and protection from adversity.",
+      "A sacred recitation of Hanuman Bahuk performed to seek Lord Hanuman's divine blessings for relief from chronic, mysterious, or undiagnosed illnesses, strength, healing, and protection.",
+    image: "/images/hanuman.jpg",
+    duration: "3–4 Hours",
+    deity: "Lord Hanuman",
+  },
+  {
+    title: "Sindhurmani Dhanvantari Pooja",
+    description:
+      "A powerful healing ritual dedicated to Lord Dhanvantari, the divine physician, seeking blessings for recovery from illness, robust health, vitality, and overall well-being.",
+    image: "/images/lord-dhanvantri.jpg",
+    duration: "2 Hours",
+    deity: "Lord Dhanvantari",
+  },
+  {
+    title: "Panchakshari Puja for Parents Health",
+    description:
+      "A sacred Panchakshari Puja dedicated to Lord Shiva, performed to pray for the good health, longevity, protection, and speedy recovery of parents.",
+    image: "/images/shiva.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Shiva",
+  },
+  {
+    title: "Sindhurmani Netra Jyoti Puja",
+    description:
+      "A special puja performed to seek divine blessings for healthy eyesight, improved vision, protection from eye-related ailments, and overall eye wellness.",
     image: "/images/suryadev.jpg",
     duration: "2 Hour",
-      deity: "Lord Surya",
+    deity: "Lord Surya",
   },
   {
-    title: "Udaka Shanthi",
+    title: "Sindhurmani Sanjeevani Puja",
     description:
-      "A traditional Vedic purification ritual using sanctified water to invoke peace, remove doshas, and bring health, harmony, and auspiciousness to the family.",
-    deity: "Varuna, Agni, Soma",
-    image: "/images/varuna-agni-soma.jpg",
-    duration: "1 Hour",
-  },
- 
-  {
-    title: "Sri Sukta Homam",
-    description:
-      "A sacred homam invoking Goddess Lakshmi's blessings for holistic well-being, prosperity, harmony, and a healthy, abundant life.",
-    image: "/images/lakshmi.jpg",
-    duration: "2–3 Hours",
-    deity: "Goddess Lakshmi",
-  },
-  {
-    title: "Pavamana Suktam",
-    description:
-      "A highly powerful Vedic chanting ritual that invokes Pavamana Swaroopa Sri Hanuman, the eternal purifier, protector, and remover of all negativity.",
+      "A powerful Sanjeevani Puja performed to invoke divine healing energies for recovery from serious illnesses, renewed vitality, and long-lasting health.",
     image: "/images/hanuman.jpg",
+    duration: "1 Hour",
+    deity: "Lord Hanuman (Sanjeevani Form)",
+  },
+  {
+    title: "Sindhurmani Maa Kali Puja for Relief in Incurable Disease",
+    description:
+      "A sacred Maa Kali Puja performed to seek the Goddess's grace for strength, protection, relief from incurable diseases, and spiritual healing.",
+    image: "/images/kalimaa.jpg",
     duration: "2–3 Hours",
-      deity: "Sri Hanuman",
+    deity: "Goddess Kali",
+  },
+  {
+    title: "Sindhurmani Madhumeh Nivaran Puja",
+    description:
+      "A dedicated healing puja performed to seek divine blessings for managing diabetes, improving overall health, and promoting physical balance and wellness.",
+    image: "/images/lord-dhanvantri.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Dhanvantari",
+  },
+  {
+    title: "Garbharaksha Puja",
+    description:
+      "A sacred Garbharaksha Puja performed for the protection of mother and child, ensuring a healthy pregnancy, safe childbirth, and the well-being of the unborn baby.",
+    image: "/images/Garbharakshambika.jpg",
+    duration: "3 Hours",
+    deity: "Lord Garbharakshambika & Goddess Parvati",
+  },
+  {
+    title: "Kaal Sarp Dosh Puja",
+    description:
+      "A traditional Vedic ritual performed to reduce the adverse effects of Kaal Sarp Dosh, bringing peace, stability, prosperity, and relief from recurring obstacles.",
+    image: "/images/festivals/nag-panchami.jpg",
+    duration: "3 Hours",
+    deity: "Lord Shiva & Nag Devta",
   },
    {
-      title: "Ayushya Homam",
-      description:
-        "A sacred ritual performed for children and adults to pray for long life, good health, and protection.",
-      image: "/images/havan.jpg",
-      duration: "3 Hours",
-      deity: "Ayushya Devata",
-    },
-  ];
+    title: "Sindhurmani Dakshin Kali Kesh Puja to Stop Hair Loss & Restoration of Hair",
+    description:
+      "A powerful Dakshin Kali Puja performed to seek the Goddess's blessings for reducing hair loss, restoring healthy hair growth, and improving scalp health.",
+    image: "/images/kalimaa.jpg",
+    duration: "3 Hours",
+    deity: "Goddess Dakshina Kali",
+  },
+  {
+    title: "Markesh Yog Puja",
+    description:
+      "A sacred puja performed to pacify the negative effects of Markesh Yog, seeking protection, improved health, longevity, and freedom from life-threatening challenges.",
+    image: "/images/shiva.jpg",
+    duration: "3 Hours",
+    deity: "Lord Mahamrityunjaya Shiva",
+  },
+  {
+    title: "Grahan Dosh Puja",
+    description:
+      "A powerful Vedic ritual performed to remove the harmful effects of Grahan Dosh, bringing mental peace, good fortune, spiritual growth, and overall harmony.",
+    image: "/images/rahuketu.jpg",
+    duration: "3 Hours",
+    deity: "Rahu & Ketu",
+  },
+  {
+    title: "Nakshatra Shanti Puja",
+    description:
+      "A sacred Nakshatra Shanti ritual performed to pacify unfavorable birth stars, ensuring peace, prosperity, good health, and success in life.",
+    image: "/images/navgraha.jpg",
+    duration: "3 Hours",
+    deity: "Nakshatra Devatas",
+  },
+  {
+    title: "Shukra Dosh Nivaran Puja",
+    description:
+      "A sacred ritual dedicated to pacifying Venus-related afflictions, helping improve relationships, financial stability, luxury, harmony, and marital happiness.",
+    image: "/images/shukradev.webp",
+    duration: "3 Hours",
+    deity: "Shukra Dev",
+  },
+  {
+    title: "Vastu Dosh Nivaran Puja",
+    description:
+      "A traditional Vastu Shanti Puja performed to remove Vastu defects, restore positive energy in the home or workplace, and attract peace, prosperity, and well-being.",
+    image: "/images/havan.jpg",
+    duration: "3 Hours",
+    deity: "Vastu Purusha",
+  },
+  {
+    title: "Brihaspati Dosh Nivaran Puja",
+    description:
+      "A powerful puja dedicated to Lord Brihaspati (Jupiter) to reduce planetary afflictions, enhance wisdom, prosperity, career growth, and family happiness.",
+    image: "/images/bhraspatidev.webp",
+    duration: "3 Hours",
+    deity: "Brihaspati Dev",
+  },
+  {
+    title: "Kundali Dosh Nivaran Puja",
+    description:
+      "A comprehensive Vedic puja performed to reduce the negative effects of planetary doshas in the birth chart and invite harmony, prosperity, and positive energy.",
+    image: "/images/navgraha.jpg",
+    duration: "3 Hours",
+    deity: "Navagraha",
+  },
+  {
+    title: "Chandra Dosh Nivaran Puja",
+    description:
+      "A sacred Moon pacification ritual performed to remove the adverse effects of Chandra Dosh, promoting emotional balance, mental peace, good health, and stability.",
+    image: "/images/poojas/chandrama-pooja.jpg",
+    duration: "3 Hours",
+    deity: "Chandra Dev",
+  },
+];
 
   const benefits = [
   {
