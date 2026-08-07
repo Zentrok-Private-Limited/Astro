@@ -18,7 +18,7 @@ import {
 export default function CareerEducationSuccess() {
   const careerpoojas = [
     {
-      title: "Udyoga Narasimhar Homam",
+      title: "Sindhurmani Siddhivinayak Puja",
       description:
         "A sacred homam dedicated to Lord Narasimha, performed to remove obstacles in career, secure employment opportunities, achieve professional success, and protect against negative influences.",
       image: "/images/narsimbha.jpg",
@@ -26,7 +26,7 @@ export default function CareerEducationSuccess() {
       deity: "Lord Narasimha",
     },
     {
-      title: "Sri Ganapati Suktam",
+      title: "Surya Dosh Nivaran Puja Job & Fame",
       description:
         "The sacred Ganapati Suktam is recited to invoke Lord Ganesha's blessings for the removal of obstacles, success in education and career, wisdom, and new beginnings.",
       image: "/images/ganpati.jpg",
@@ -34,7 +34,7 @@ export default function CareerEducationSuccess() {
       deity: "Lord Ganesha",
     },
     {
-      title: "Ganapati Sahasranama",
+      title: "Devi Mahatmya Chandi Paath Puja for Getting Job",
       description:
         "A devotional chanting of the thousand names of Lord Ganesha, performed to seek divine blessings for career growth, prosperity, wisdom, success, and the removal of all obstacles.",
       image: "/images/ganpati2.jpg",
@@ -42,7 +42,7 @@ export default function CareerEducationSuccess() {
       deity: "Lord Ganesha",
     },
     {
-      title: "Sri Hayagreeva Madhu Abhishekam",
+      title: "Gajmukta Riddhi Siddhi Puja",
       description:
         "A special honey abhishekam offered to Lord Hayagreeva to enhance knowledge, memory, intelligence, academic excellence, and success in competitive examinations and professional pursuits.",
       image: "/images/hayageeva.jpg",
@@ -50,7 +50,15 @@ export default function CareerEducationSuccess() {
       deity: "Lord Hayagreeva",
     },
     {
-      title: "Budha Shanti Homam",
+    title: "Sindhurmani Sarvbhouma Dashavatar Puja",
+    description:
+      "A sacred worship of the ten divine incarnations of Lord Vishnu, performed for protection, righteousness, prosperity, spiritual growth, and overall success in life.",
+    image: "/images/lakshmikuber.jpg",
+    duration: "3–4 Hours",
+    deity: "Lord Vishnu (Dashavatara)",
+    },
+    {
+      title: "Kuber Upasana Puja",
       description:
         "A Vedic homam performed to pacify the planet Budha (Mercury), improving communication, intelligence, analytical abilities, business success, and career advancement.",
       image: "/images/buddha.jpg",
@@ -58,28 +66,12 @@ export default function CareerEducationSuccess() {
       deity: "Lord Budha (Mercury)",
     },
     {
-      title: "Medha Dakshina Murthy Homam",
+      title: "Rahu Puja for Moving Abroad",
       description:
         "A sacred homam dedicated to Lord Dakshinamurthy, performed to enhance wisdom, concentration, learning ability, career growth, and spiritual knowledge.",
       image: "/images/DakshinaMurthy.jpg",
       duration: "3 Hours",
       deity: "Lord Dakshinamurthy",
-    },
-    {
-      title: "Hayagreeva Homam",
-      description:
-        "A powerful homam dedicated to Lord Hayagreeva, the deity of knowledge and wisdom, performed to bless students and professionals with intelligence, memory, learning, and career success.",
-      image: "/images/hayageeva.jpg",
-      duration: "3 Hours",
-      deity: "Lord Hayagreeva",
-    },
-    {
-      title: "Saraswati Homam",
-      description:
-        "A sacred homam dedicated to Goddess Saraswati to seek blessings for education, wisdom, creativity, eloquence, academic excellence, and success in career and the arts.",
-      image: "/images/saraswati.jpg",
-      duration: "3 Hours",
-      deity: "Goddess Saraswati",
     },
   ];
 

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Sun } from "lucide-react";
+import { Menu, X, Phone,Mail, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { company } from "@/lib/company";
 import { mainNav } from "@/lib/navigation";
@@ -18,23 +18,45 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full">
       {/* Top utility bar */}
       <div className="hidden bg-primary text-primary-foreground md:block">
-        <div className="mx-auto flex items-center justify-center px-2 py-2 overflow-hidden">
-          <motion.p
-            className="font-bold text-amber-200 whitespace-nowrap"
-            animate={{
-  x: [-450, 450, -450],
-}}
-            transition={{
-              duration: 25,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            Worldwide online pooja and astro services — Zoom &amp; Google Meet
-            available
-          </motion.p>
-        </div>
-      </div>
+  <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2">
+    
+    {/* Animated Marquee Section */}
+    <div className="relative flex-1 overflow-hidden">
+      <motion.p
+        className="whitespace-nowrap font-bold text-amber-200"
+        animate={{
+          x: ["100%", "-100%"],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+      >
+        Worldwide online pooja and astro services — Zoom &amp; Google Meet available
+      </motion.p>
+    </div>
+
+    {/* Contact Info Section */}
+    <div className="flex shrink-0 items-center gap-6 text-sm">
+      <a
+        href={`tel:${company.phone.replace(/[^+\d]/g, "")}`}
+        className="flex items-center gap-2 transition-colors hover:text-accent"
+      >
+        <Phone className="size-4" aria-hidden="true" />
+        <span>{company.phone}</span>
+      </a>
+      <a
+        href={`mailto:${company.email}`}
+       className="flex items-center gap-2 transition-colors hover:text-accent"
+      >
+        <Mail className="size-4" aria-hidden="true" />
+        <span>{company.email}</span>
+      </a>
+    </div>
+
+  </div>
+</div>
 
       {/* Main nav */}
       <div className="border-b border-border bg-background/95 backdrop-blur">

@@ -15,13 +15,13 @@ export const company = {
   /** Legal name used in the footer copyright line. */
   legalName: process.env.NEXT_PUBLIC_COMPANY_LEGAL_NAME || `${NAME} Inc`,
   /** Primary contact phone number. */
-  phone: process.env.NEXT_PUBLIC_COMPANY_PHONE || "+91 98664-71845",
+  phone: process.env.NEXT_PUBLIC_COMPANY_PHONE || "+91 87962-99313",
   /** Primary contact email. */
-  email: process.env.NEXT_PUBLIC_COMPANY_EMAIL || "hello@astro.org",
+  email: process.env.NEXT_PUBLIC_COMPANY_EMAIL || "bookonlinepooja@gmail.com",
   /** Secondary contact email. */
   emailAlt: process.env.NEXT_PUBLIC_COMPANY_EMAIL_ALT || "services@tester.org",
   /** WhatsApp number in international format (no spaces). */
-  whatsapp: process.env.NEXT_PUBLIC_COMPANY_WHATSAPP || "+919866471845",
+  whatsapp: process.env.NEXT_PUBLIC_COMPANY_WHATSAPP || "+91 87962-99313",
   /** Mailing / office address. */
   address:
     process.env.NEXT_PUBLIC_COMPANY_ADDRESS ||

@@ -16,55 +16,72 @@ import {
 } from "lucide-react";
 
 export default function WealthandProsperity() {
-  const wealthpoojas = [
+
+ const wealthpoojas = [
   {
-  title: "Sri Sukta Homam",
-  description:
-    "A powerful Vedic fire ritual based on the Sri Sukta, performed to invoke Goddess Mahalakshmi's blessings for wealth, prosperity, abundance, peace, and overall family well-being.",
-  image: "/images/lakshmi.jpg",
-  duration: "2–3 Hours",
-  deity: "Goddess Mahalakshmi",
-},
-{
-  title: "Sri Lakshmi Narayana Hridaya",
-  description:
-    "A sacred recitation and pooja dedicated to Lord Narayana and Goddess Lakshmi, performed to attain divine protection, financial stability, marital harmony, spiritual growth, and lasting prosperity.",
-  image: "/images/mahalakshmi.jpg",
-  duration: "2 Hours",
-  deity: "Goddess Mahalakshmi",
-},
-{
-  title: "Lakshmi Narayana Homam",
-  description:
-    "A sacred homam and pooja performed to seek the combined blessings of Lord Narayana and Goddess Lakshmi for health, happiness, prosperity, family harmony, and success in all aspects of life.",
-  image: "/images/lakshminarayan.jpg",
-  duration: "2–3 Hours",
-  deity: "Lord Narayana & Goddess Lakshmi",
-},
-{
-  title: "Sri Suktam",
-  description:
-    "The sacred Sri Suktam is chanted to invoke Goddess Mahalakshmi's divine grace, attracting wealth, prosperity, good fortune, inner peace, and the removal of financial hardships.",
-  image: "/images/lakshmi.jpg",
-  duration: "1 Hour",
-  deity: "Goddess Mahalakshmi",
-},
-{
-  title: "Lakshmi Homa",
-  description:
-    "A traditional fire ritual dedicated to Goddess Mahalakshmi, performed to remove financial obstacles, attract abundance, enhance career and business success, and bring lasting prosperity.",
-  image: "/images/mahalakshmi.jpg",
-  duration: "2 Hours",
-  deity: "Goddess Mahalakshmi",
-},
-{
-  title: "Lakshmi Kubera Homam",
-  description:
-    "An auspicious Vedic homam dedicated to Goddess Lakshmi and Lord Kubera to attract wealth, improve financial stability, remove debts, and bless the family with lasting prosperity and abundance.",
-  image: "/images/lakshmikuber.jpg",
-  duration: "3 Hours",
-  deity: "Lord Kubera & Goddess Lakshmi",
-},
+    title: "Ganesh Lakshmi Puja",
+    description:
+      "A sacred puja dedicated to Lord Ganesha and Goddess Lakshmi to remove obstacles, attract wealth, ensure success in new ventures, and bring prosperity and happiness to the family.",
+    image: "/images/lakshmiganesh.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Ganesha & Goddess Lakshmi",
+  },
+  {
+    title: "Sindhurmani Navdurga Mahakali Siddh Laxmi Puja",
+    description:
+      "A powerful puja invoking Goddess Navdurga, Mahakali, and Siddha Lakshmi for protection, victory over negativity, financial prosperity, spiritual strength, and fulfillment of wishes.",
+    image: "/images/threegoddess.jpg",
+    duration: "4–5 Hours",
+    deity: "Navdurga, Goddess Mahakali & Siddha Lakshmi",
+  },
+  {
+    title: "Goddess Lakshmi Puja",
+    description:
+      "A traditional Lakshmi Puja performed to seek the blessings of Goddess Lakshmi for wealth, prosperity, abundance, good fortune, and harmony in home and business.",
+    image: "/images/lakshmi.jpg",
+    duration: "1.5–2 Hours",
+    deity: "Goddess Lakshmi",
+  },
+  {
+    title: "Mahalaxmi Ganesh Upasana Puja",
+    description:
+      "A devotional worship of Goddess Mahalakshmi and Lord Ganesha performed to remove financial obstacles, ensure success, and bless devotees with prosperity and wisdom.",
+    image: "/images/lakshmiganesh.jpg",
+    duration: "2 Hours",
+    deity: "Goddess Mahalakshmi & Lord Ganesha",
+  },
+  {
+    title: "Shree Vaibhava Lakshmi Puja",
+    description:
+      "A revered Friday puja dedicated to Goddess Vaibhava Lakshmi for financial stability, prosperity, family happiness, fulfillment of desires, and overall well-being.",
+    image: "/images/mahalakshmi.jpg",
+    duration: "2 Hours",
+    deity: "Goddess Vaibhava Lakshmi",
+  },
+  {
+    title: "Sindhurmani Sarvarth Siddhi Yantra Puja",
+    description:
+      "A special yantra puja performed to energize the Sarvarth Siddhi Yantra, attracting success, wealth, protection, removal of obstacles, and fulfillment of important life goals.",
+    image: "/images/lakshmiganesh2.jpg",
+    duration: "2–3 Hours",
+    deity: "Sarvarth Siddhi Yantra (Divine Energies of Lakshmi & Ganesha)",
+  },
+  {
+    title: "Sindhurmani Riddhi Siddhi Puja",
+    description:
+      "A powerful puja invoking Goddess Riddhi, Goddess Siddhi, and Lord Ganesha to bless devotees with prosperity, wisdom, success, abundance, and fulfillment of aspirations.",
+    image: "/images/lakshmikuber.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Ganesha, Goddess Riddhi & Goddess Siddhi",
+  },
+  {
+    title: "Sindhurmani Ganesh Lakshmi and Saraswati Puja",
+    description:
+      "A combined worship of Lord Ganesha, Goddess Lakshmi, and Goddess Saraswati to remove obstacles, attract wealth, enhance knowledge, and ensure success in education, career, and business.",
+    image: "/images/ganeshlakshmisaraswati.jpg",
+    duration: "3 Hours",
+    deity: "Lord Ganesha, Goddess Lakshmi & Goddess Saraswati",
+  },
 ];
 
   const benefits = [

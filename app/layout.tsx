@@ -4,6 +4,8 @@ import { company } from '@/lib/company';
 import ClientLayout from './ClientLayout';
 import './globals.css';
 import FloatingCTA from "@/components/floatingCTA";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+import Script from 'next/script';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -39,10 +41,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`light ${playfair.variable} ${inter.variable}`}>
       <body className="bg-background font-sans antialiased">
-        <ClientLayout>{children}
-
+        <Script
+          src="//code.jivosite.com/widget/BAKwPBIiFg"
+          strategy="afterInteractive"
+        />
+        <ClientLayout>
+          {children}
         </ClientLayout>
         <FloatingCTA />
+        <WhatsAppFloat />
       </body>
     </html>
   );
