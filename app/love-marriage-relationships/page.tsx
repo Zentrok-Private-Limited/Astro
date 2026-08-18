@@ -11,48 +11,114 @@ import {
 } from "lucide-react";
 
 export default function LoveMarriageRelationship() {
+
   const marriagepoojas = [
-    {
-      title: "Navagraha Homam",
-      description:
-        "A sacred homam performed to pacify the nine planetary deities, helping remove astrological obstacles that may delay marriage and bringing harmony, stability, and auspiciousness into relationships.",
-      image: "/images/navgraha.jpg",
-      duration: "2–3 Hours",
-      deity: "Navagrahas",
-    },
-    {
-      title: "Manglik Dosh Parihara Homam",
-      description:
-        "A powerful Vedic ritual performed to reduce the effects of Mangal Dosha (Kuja Dosha), promoting compatibility, marital harmony, and the timely fulfillment of marriage prospects.",
-      image: "/images/mangal.jpg",
-      duration: "2 Hours",
-      deity: "Lord Mangal (Mars)",
-    },
-    {
-      title: "Girija Kalyana",
-      description:
-        "A sacred ceremony celebrating the divine marriage of Lord Shiva and Goddess Parvati, performed to seek blessings for a suitable life partner, a happy marriage, and lasting marital bliss.",
-      image: "/images/shivparvati.jpg",
-      duration: "2–3 Hours",
-      deity: "Lord Shiva & Goddess Parvati",
-    },
-    {
-      title: "Swayamvara Parvati Homam",
-      description:
-        "A highly revered homam dedicated to Goddess Parvati, performed to remove obstacles in marriage, attract a compatible life partner, and bless devotees with a joyful and successful married life.",
-      image: "/images/parvati.jpg",
-      duration: "1 Hour",
-      deity: "Goddess Parvati",
-    },
-    {
-      title: "Shashtiabdapoorti (80th Anniversary)",
-      description:
-        "A traditional Vedic celebration performed on completing sixty years of age, invoking divine blessings for renewed health, marital happiness, family harmony, longevity, and prosperity.",
-      image: "/images/oldanniversary.jpg",
-      duration: "2 Hours",
-      deity: "Lord Shiva & Family Deities",
-    },
-  ];
+  {
+    title: "Shiv Shakti Siddhi Puja for Happy Married Life",
+    description:
+      "A sacred puja dedicated to the divine union of Lord Shiva and Goddess Shakti, performed to promote love, understanding, harmony, emotional bonding, and lasting happiness in married life.",
+    image: "/images/shivshakti.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Shiva & Goddess Shakti",
+  },
+  {
+    title: "Shiv Parvati Puja",
+    description:
+      "A sacred puja honoring the divine union of Lord Shiva and Goddess Parvati, performed to seek blessings for a suitable partner, marital harmony, mutual understanding, and a happy and stable married life.",
+    image: "/images/shivparvati.jpg",
+    duration: "2 Hours",
+    deity: "Lord Shiva & Goddess Parvati",
+  },
+  {
+    title: "Gauri Shankar Puja",
+    description:
+      "A powerful puja dedicated to Gauri and Shankar, performed to strengthen relationships, remove obstacles in marriage, attract a compatible life partner, and promote love and harmony between couples.",
+    image: "/images/gaurishankar.jpg",
+    duration: "2–3 Hours",
+    deity: "Goddess Gauri & Lord Shankar",
+  },
+  {
+    title: "Roka & Gauri Puja",
+    description:
+      "A sacred ceremony performed during the engagement or Roka period to seek the blessings of Goddess Gauri, remove obstacles before marriage, and create an auspicious foundation for a happy married life.",
+    image: "/images/gauri.jpg",
+    duration: "1–2 Hours",
+    deity: "Goddess Gauri",
+  },
+  {
+    title: "Marriage Anniversary Puja",
+    description:
+      "A special Vedic puja performed to celebrate the marital journey and seek divine blessings for renewed love, mutual understanding, family harmony, good fortune, prosperity, and a long-lasting relationship.",
+    image: "/images/occasions/anniversary-pooja.jpg",
+    duration: "2 Hours",
+    deity: "Lord Shiva & Goddess Parvati",
+  },
+  {
+    title: "Goddess Parvati Puja",
+    description:
+      "A devotional puja dedicated to Goddess Parvati, performed to seek blessings for love, marriage, relationship harmony, a suitable life partner, and happiness and stability in married life.",
+    image: "/images/parvati.jpg",
+    duration: "2 Hours",
+    deity: "Goddess Parvati",
+  },
+  {
+    title: "Full Wedding Puja Package",
+    description:
+      "A comprehensive collection of traditional wedding rituals performed to create an auspicious beginning for marriage, invoke divine blessings, strengthen the bond between the couple, and promote prosperity and family harmony.",
+    image: "/images/marriage.jpg",
+    duration: "4–6 Hours",
+    deity: "Lord Ganesha, Lord Shiva & Goddess Parvati",
+  },
+  {
+    title: "Vivah Sanskar Puja - Bride",
+    description:
+      "A traditional Vivah Sanskar ceremony for the bride, performed according to Vedic customs to seek divine blessings for a harmonious married life, emotional well-being, prosperity, and a blessed union with her spouse.",
+    image: "/images/bride.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Shiva & Goddess Parvati",
+  },
+  {
+    title: "Vivah Sanskar Puja - Groom",
+    description:
+      "A traditional Vivah Sanskar ceremony for the groom, performed according to Vedic customs to seek blessings for marital responsibility, harmony, prosperity, family happiness, and a successful union with his spouse.",
+    image: "/images/groom.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Shiva & Goddess Parvati",
+  },
+  // {
+  //   title: "Swayamvara Parvathi Mantra Puja",
+  //   description:
+  //     "A sacred puja based on the Swayamvara Parvathi Mantra, traditionally performed to seek Goddess Parvati's blessings for finding a suitable spouse, overcoming marriage obstacles, and attaining a harmonious and fulfilling married life.",
+  //   image: "/images/swayamvaraparvathi.jpg",
+  //   duration: "2–3 Hours",
+  //   deity: "Goddess Parvati",
+  // },
+  // {
+  //   title: "Panchakshari Yagna for Spouse",
+  //   description:
+  //     "A sacred yagna centered around the Panchakshari Mantra of Lord Shiva, performed to seek divine blessings for finding a suitable spouse, strengthening relationships, overcoming obstacles, and creating harmony in married life.",
+  //   image: "/images/panchakshari.jpg",
+  //   duration: "2–3 Hours",
+  //   deity: "Lord Shiva",
+  // },
+  // {
+  //   title: "Gajmukta Rati Kamdev Puja",
+  //   description:
+  //     "A special puja dedicated to Kamdev and Rati, performed to invoke blessings for love, attraction, emotional connection, mutual affection, and harmony between partners.",
+  //   image: "/images/ratikamdev.jpg",
+  //   duration: "2–3 Hours",
+  //   deity: "Lord Kamdev & Goddess Rati",
+  // },
+  // {
+  //   title: "Gajmukta Rati Manmadha Pujan",
+  //   description:
+  //     "A devotional puja dedicated to Manmadha and Rati, performed to nurture love, affection, attraction, emotional bonding, and harmony between couples and partners.",
+  //   image: "/images/ratimanmadha.jpg",
+  //   duration: "2–3 Hours",
+  //   deity: "Lord Manmadha & Goddess Rati",
+  // },
+];
+
   const benefits = [
     {
       icon: Heart,

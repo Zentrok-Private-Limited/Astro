@@ -17,63 +17,63 @@ import {
 
 export default function CareerEducationSuccess() {
   const careerpoojas = [
-    {
-      title: "Sindhurmani Siddhivinayak Puja",
-      description:
-        "A sacred homam dedicated to Lord Narasimha, performed to remove obstacles in career, secure employment opportunities, achieve professional success, and protect against negative influences.",
-      image: "/images/narsimbha.jpg",
-      duration: "2–3 Hours",
-      deity: "Lord Narasimha",
-    },
-    {
-      title: "Surya Dosh Nivaran Puja Job & Fame",
-      description:
-        "The sacred Ganapati Suktam is recited to invoke Lord Ganesha's blessings for the removal of obstacles, success in education and career, wisdom, and new beginnings.",
-      image: "/images/ganpati.jpg",
-      duration: "2 Hours",
-      deity: "Lord Ganesha",
-    },
-    {
-      title: "Devi Mahatmya Chandi Paath Puja for Getting Job",
-      description:
-        "A devotional chanting of the thousand names of Lord Ganesha, performed to seek divine blessings for career growth, prosperity, wisdom, success, and the removal of all obstacles.",
-      image: "/images/ganpati2.jpg",
-      duration: "2–3 Hours",
-      deity: "Lord Ganesha",
-    },
-    {
-      title: "Gajmukta Riddhi Siddhi Puja",
-      description:
-        "A special honey abhishekam offered to Lord Hayagreeva to enhance knowledge, memory, intelligence, academic excellence, and success in competitive examinations and professional pursuits.",
-      image: "/images/hayageeva.jpg",
-      duration: "1 Hour",
-      deity: "Lord Hayagreeva",
-    },
-    {
+  {
+    title: "Sindhurmani Siddhivinayak Puja",
+    description:
+      "A sacred puja dedicated to Lord Ganesha, performed to remove career obstacles, attract new job opportunities, support professional growth, and bring success and stability in work life.",
+    image: "/images/ganpati.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Ganesha",
+  },
+  {
+    title: "Surya Dosh Nivaran Puja Job & Fame",
+    description:
+      "A powerful Surya Puja performed to reduce the negative effects of Surya Dosh and strengthen the Sun's influence, helping improve career growth, leadership, confidence, recognition, government-related opportunities, and professional reputation.",
+    image: "/images/suryadev.jpg",
+    duration: "2 Hours",
+    deity: "Lord Surya (Sun)",
+  },
+  {
+    title: "Devi Mahatmya Chandi Paath Puja for Getting Job",
+    description:
+      "A powerful recitation of Devi Mahatmya and Chandi Paath performed to seek Goddess Durga's blessings for overcoming career obstacles, attracting job opportunities, gaining confidence, and achieving professional success.",
+    image: "/images/festivals/navratri.jpg",
+    duration: "2–3 Hours",
+    deity: "Goddess Durga (Chandi)",
+  },
+  {
+    title: "Gajmukta Riddhi Siddhi Puja",
+    description:
+      "A special puja dedicated to Lord Ganesha and the divine energies of Riddhi and Siddhi, performed to remove obstacles, enhance wisdom and intelligence, attract prosperity, and support success in career and professional endeavors.",
+    image: "/images/ridhisiddhi.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Ganesha, Riddhi & Siddhi",
+  },
+  {
     title: "Sindhurmani Sarvbhouma Dashavatar Puja",
     description:
-      "A sacred worship of the ten divine incarnations of Lord Vishnu, performed for protection, righteousness, prosperity, spiritual growth, and overall success in life.",
-    image: "/images/lakshmikuber.jpg",
+      "A sacred worship of the ten incarnations of Lord Vishnu, performed to overcome obstacles, receive divine protection, establish stability, support career progress, and bring overall success and prosperity in life.",
+    image: "/images/vishnu.jpg",
     duration: "3–4 Hours",
     deity: "Lord Vishnu (Dashavatara)",
-    },
-    {
-      title: "Kuber Upasana Puja",
-      description:
-        "A Vedic homam performed to pacify the planet Budha (Mercury), improving communication, intelligence, analytical abilities, business success, and career advancement.",
-      image: "/images/buddha.jpg",
-      duration: "2 Hours",
-      deity: "Lord Budha (Mercury)",
-    },
-    {
-      title: "Rahu Puja for Moving Abroad",
-      description:
-        "A sacred homam dedicated to Lord Dakshinamurthy, performed to enhance wisdom, concentration, learning ability, career growth, and spiritual knowledge.",
-      image: "/images/DakshinaMurthy.jpg",
-      duration: "3 Hours",
-      deity: "Lord Dakshinamurthy",
-    },
-  ];
+  },
+  {
+    title: "Kuber Upasana Puja",
+    description:
+      "A sacred Kuber Upasana performed to seek the blessings of Lord Kuber, the deity of wealth and prosperity, helping attract financial opportunities, career growth, business success, abundance, and stability.",
+    image: "/images/kuber.jpg",
+    duration: "2 Hours",
+    deity: "Lord Kuber",
+  },
+  {
+    title: "Rahu Puja for Moving Abroad",
+    description:
+      "A specialized Rahu Puja performed to reduce the challenging effects of Rahu and support opportunities related to foreign travel, overseas employment, immigration, relocation, and settling abroad.",
+    image: "/images/rahu.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Rahu",
+  },
+];
 
   const benefits = [
     {
