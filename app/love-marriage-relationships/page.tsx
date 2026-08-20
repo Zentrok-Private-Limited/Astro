@@ -85,38 +85,30 @@ export default function LoveMarriageRelationship() {
     duration: "2–3 Hours",
     deity: "Lord Shiva & Goddess Parvati",
   },
-  // {
-  //   title: "Swayamvara Parvathi Mantra Puja",
-  //   description:
-  //     "A sacred puja based on the Swayamvara Parvathi Mantra, traditionally performed to seek Goddess Parvati's blessings for finding a suitable spouse, overcoming marriage obstacles, and attaining a harmonious and fulfilling married life.",
-  //   image: "/images/swayamvaraparvathi.jpg",
-  //   duration: "2–3 Hours",
-  //   deity: "Goddess Parvati",
-  // },
-  // {
-  //   title: "Panchakshari Yagna for Spouse",
-  //   description:
-  //     "A sacred yagna centered around the Panchakshari Mantra of Lord Shiva, performed to seek divine blessings for finding a suitable spouse, strengthening relationships, overcoming obstacles, and creating harmony in married life.",
-  //   image: "/images/panchakshari.jpg",
-  //   duration: "2–3 Hours",
-  //   deity: "Lord Shiva",
-  // },
-  // {
-  //   title: "Gajmukta Rati Kamdev Puja",
-  //   description:
-  //     "A special puja dedicated to Kamdev and Rati, performed to invoke blessings for love, attraction, emotional connection, mutual affection, and harmony between partners.",
-  //   image: "/images/ratikamdev.jpg",
-  //   duration: "2–3 Hours",
-  //   deity: "Lord Kamdev & Goddess Rati",
-  // },
-  // {
-  //   title: "Gajmukta Rati Manmadha Pujan",
-  //   description:
-  //     "A devotional puja dedicated to Manmadha and Rati, performed to nurture love, affection, attraction, emotional bonding, and harmony between couples and partners.",
-  //   image: "/images/ratimanmadha.jpg",
-  //   duration: "2–3 Hours",
-  //   deity: "Lord Manmadha & Goddess Rati",
-  // },
+  {
+    title: "Swayamvara Parvathi Mantra Puja",
+    description:
+      "A sacred puja based on the Swayamvara Parvathi Mantra, traditionally performed to seek Goddess Parvati's blessings for finding a suitable spouse, overcoming marriage obstacles, and attaining a harmonious and fulfilling married life.",
+    image: "/images/parvati.jpg",
+    duration: "2–3 Hours",
+    deity: "Goddess Parvati",
+  },
+  {
+    title: "Panchakshari Yagna for Spouse",
+    description:
+      "A sacred yagna centered around the Panchakshari Mantra of Lord Shiva, performed to seek divine blessings for finding a suitable spouse, strengthening relationships, overcoming obstacles, and creating harmony in married life.",
+    image: "/images/shiva.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Shiva",
+  },
+  {
+    title: "Gajmukta Rati Kamdev Puja",
+    description:
+      "A special puja dedicated to Kamdev and Rati, performed to invoke blessings for love, attraction, emotional connection, mutual affection, and harmony between partners.",
+    image: "/images/kamdevandrati.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Kamdev & Goddess Rati",
+  }
 ];
 
   const benefits = [

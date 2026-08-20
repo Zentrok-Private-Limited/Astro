@@ -44,13 +44,13 @@ const poojaCategories = [
     title: "Festivals & Special Occasions",
     subtitle: "Sacred rituals for every celebration",
     image: "/images/festival.webp",
-    link: "/health-healing",
+    link: "/festivals-occasions",
   },
   {
     title: "Peace & Spiritual Growth",
     subtitle: "Inner peace and divine blessings",
     image: "/images/peace.webp",
-    link: "/health-healing",
+    link: "/peace-growth",
   },
 ];
 
@@ -115,48 +115,59 @@ export default function HomePage() {
 
       {/* Highlights */}
       <section className="bg-secondary/20 py-8">
-        <div className="mx-auto max-w-8xl px-6">
-          <div className="mb-5 text-center">
-            <h2 className="font-serif text-lg text-primary md:text-2xl">
-              Find the Perfect Pooja for Your Needs
-            </h2>
+  <div className="mx-auto max-w-8xl px-6">
+    <div className="mb-5 text-center">
+      <h2 className="font-serif text-lg text-primary md:text-2xl">
+        Find the Perfect Pooja for Your Needs
+      </h2>
 
-            <div className="mt-3 flex items-center justify-center gap-4">
-              <div className="h-px w-20 bg-linear-to-r from-transparent to-primary/40" />
-              <span className="text-lg text-primary/70">✦</span>
-              <div className="h-px w-20 bg-linear-to-l from-transparent to-primary/40" />
-            </div>
+      <div className="mt-3 flex items-center justify-center gap-4">
+        <div className="h-px w-20 bg-linear-to-r from-transparent to-primary/40" />
+        <span className="text-lg text-primary/70">✦</span>
+        <div className="h-px w-20 bg-linear-to-l from-transparent to-primary/40" />
+      </div>
+    </div>
+
+    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+      {poojaCategories.map((item) => (
+        <Link
+          key={item.title}
+          href={item.link}
+          className="group overflow-hidden rounded-2xl border border-primary/15 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:shadow-xl"
+        >
+          <div className="overflow-hidden rounded-xl">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="aspect-square w-full object-cover transition duration-500 group-hover:scale-110"
+            />
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-            {poojaCategories.map((item) => (
-              <Link
-                key={item.title}
-                href={item.link}
-                className="group overflow-hidden rounded-2xl border border-primary/15 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:shadow-xl"
-              >
-                <div className="overflow-hidden rounded-xl">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="aspect-square w-full object-cover transition duration-500 group-hover:scale-110"
-                  />
-                </div>
+          <div className="pt-2 text-center">
+            <h3 className="mt-3 font-serif text-base font-semibold leading-tight text-primary">
+              {item.title}
+            </h3>
 
-                <div className="pt-2 text-center">
-                  <h3 className="mt-3 font-serif text-base font-semibold leading-tight text-primary">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                    {item.subtitle}
-                  </p>
-                </div>
-              </Link>
-            ))}
+            <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+              {item.subtitle}
+            </p>
           </div>
-        </div>
-      </section>
+        </Link>
+      ))}
+    </div>
+
+    {/* Explore All Poojas */}
+    <div className="mt-8 flex justify-center">
+      <Link
+        href="/allpoojas"
+        className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:opacity-90 hover:shadow-lg"
+      >
+        Explore All Poojas
+        <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+      </Link>
+    </div>
+  </div>
+</section>
 
       <section className="mx-auto mt-16 mb-5 max-w-7xl px-6">
         <div className="relative overflow-hidden rounded-[28px]">
@@ -231,59 +242,70 @@ export default function HomePage() {
 
       {/* pooja services */}
       <section className="relative overflow-hidden py-24">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 -z-10 bg-linear-to-b from-secondary/30 via-background to-background" />
+  {/* Background Decoration */}
+  <div className="absolute inset-0 -z-10 bg-linear-to-b from-secondary/30 via-background to-background" />
 
-        <div className="mx-auto max-w-7xl px-6">
-          <SectionHeading
-            eyebrow="Explore Categories"
-            title="Find the Right Spiritual Service"
-            description="Browse our carefully curated categories of poojas, temple rituals and astrology services performed by experienced Vedic priests."
-          />
+  <div className="mx-auto max-w-7xl px-6">
+    <SectionHeading
+      eyebrow="Explore Categories"
+      title="Find the Right Spiritual Service"
+      description="Browse our carefully curated categories of poojas, temple rituals and astrology services performed by experienced Vedic priests."
+    />
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {poojaServicesCategories.map((category) => (
-              <Link
-                key={category.title}
-                href={category.href}
-                className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 hover:shadow-2xl"
-              >
-                {/* Image */}
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={category.image}
-                    alt={category.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+    <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+      {poojaServicesCategories.map((category) => (
+        <Link
+          key={category.title}
+          href={category.href}
+          className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 hover:shadow-2xl"
+        >
+          {/* Image */}
+          <div className="relative h-64 overflow-hidden">
+            <Image
+              src={category.image}
+              alt={category.title}
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+            />
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-primary/25 to-transparent" />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-primary/25 to-transparent" />
 
-                  {/* Title on Image */}
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="font-serif text-3xl font-semibold text-white">
-                      {category.title}
-                    </h3>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-7">
-                  <p className="text-sm leading-7 text-muted-foreground">
-                    {category.description}
-                  </p>
-
-                  <div className="mt-6 flex items-center gap-2 font-semibold text-primary transition-all group-hover:gap-3">
-                    Explore Category
-                    <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
-                </div>
-              </Link>
-            ))}
+            {/* Title on Image */}
+            <div className="absolute bottom-6 left-6 right-6">
+              <h3 className="font-serif text-3xl font-semibold text-white">
+                {category.title}
+              </h3>
+            </div>
           </div>
-        </div>
-      </section>
+
+          {/* Content */}
+          <div className="p-7">
+            <p className="text-sm leading-7 text-muted-foreground">
+              {category.description}
+            </p>
+
+            <div className="mt-6 flex items-center gap-2 font-semibold text-primary transition-all group-hover:gap-3">
+              Explore Category
+              <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+
+    {/* Explore All Poojas Button */}
+    <div className="mt-14 flex justify-center">
+      <Link
+        href="/allpoojas"
+        className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:opacity-90 hover:shadow-xl"
+      >
+        Explore All Poojas
+        <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* Astrology */}
       <section className="bg-secondary">

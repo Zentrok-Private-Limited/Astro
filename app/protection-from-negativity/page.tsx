@@ -3,8 +3,8 @@ import Link from "next/link";
 import { CalendarDays, ClipboardPen, Flame, Video, Gift } from "lucide-react";
 import {
   Heart,
-  HeartHandshake,
-  Users,
+  Shield,
+  Sun,
   Sparkles,
   ShieldCheck,
   Flower2,
@@ -12,95 +12,160 @@ import {
 
 export default function ProtectionFromNegativity() {
   const negativitypoojas = [
-    {
-      title: "Navagraha Homam",
-      description:
-        "A sacred homam performed to pacify the nine planetary deities, helping remove astrological obstacles that may delay marriage and bringing harmony, stability, and auspiciousness into relationships.",
-      image: "/images/navgraha.jpg",
-      duration: "2–3 Hours",
-      deity: "Navagrahas",
-    },
-    {
-      title: "Manglik Dosh Parihara Homam",
-      description:
-        "A powerful Vedic ritual performed to reduce the effects of Mangal Dosha (Kuja Dosha), promoting compatibility, marital harmony, and the timely fulfillment of marriage prospects.",
-      image: "/images/mangal.jpg",
-      duration: "2 Hours",
-      deity: "Lord Mangal (Mars)",
-    },
-    {
-      title: "Girija Kalyana",
-      description:
-        "A sacred ceremony celebrating the divine marriage of Lord Shiva and Goddess Parvati, performed to seek blessings for a suitable life partner, a happy marriage, and lasting marital bliss.",
-      image: "/images/shivparvati.jpg",
-      duration: "2–3 Hours",
-      deity: "Lord Shiva & Goddess Parvati",
-    },
-    {
-      title: "Swayamvara Parvati Homam",
-      description:
-        "A highly revered homam dedicated to Goddess Parvati, performed to remove obstacles in marriage, attract a compatible life partner, and bless devotees with a joyful and successful married life.",
-      image: "/images/parvati.jpg",
-      duration: "1 Hour",
-      deity: "Goddess Parvati",
-    },
-    {
-      title: "Shashtiabdapoorti (80th Anniversary)",
-      description:
-        "A traditional Vedic celebration performed on completing sixty years of age, invoking divine blessings for renewed health, marital happiness, family harmony, longevity, and prosperity.",
-      image: "/images/oldanniversary.jpg",
-      duration: "2 Hours",
-      deity: "Lord Shiva & Family Deities",
-    },
-  ];
+  {
+    title: "Sindhurmani Balraksha Nazar Utar Puja",
+    description:
+      "A sacred protection ritual performed to remove the effects of Nazar (evil eye) and seek divine protection, safety, and positive energy for children and loved ones.",
+    image: "/images/evileyee.jpg",
+    duration: "1–2 Hours",
+    deity: "Protective Deities",
+  },
+  {
+    title: "Nazar Utar Puja",
+    description:
+      "A traditional Vedic ritual performed to remove the effects of the evil eye and negative vibrations, helping restore peace, positivity, and spiritual balance.",
+    image: "/images/evileye.jpg",
+    duration: "1 Hour",
+    deity: "Protective Deities",
+  },
+  {
+    title: "Sindhurmani Mahakaal Bhairav Puja",
+    description:
+      "A powerful devotional ritual dedicated to Lord Mahakaal Bhairav, seeking divine protection from negative influences, fear, obstacles, and unwanted energies.",
+    image: "/images/mahakal.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Mahakaal Bhairav",
+  },
+  {
+    title: "Sindhurmani Sudarshan Chakra Puja to Remove Black Magic",
+    description:
+      "A sacred ritual invoking the divine power of Lord Sudarshan Chakra for spiritual protection, cleansing negative influences, and creating a shield of positive energy.",
+    image: "/images/vishnu.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Vishnu & Sudarshan Chakra",
+  },
+  {
+    title: "Sindhurmani Mahakali Kala Jadu Nivaran Puja",
+    description:
+      "A powerful Maa Mahakali ritual performed for spiritual protection and the removal of harmful negative influences, helping devotees seek courage, strength, and peace.",
+    image: "/images/kalimaa.jpg",
+    duration: "2–3 Hours",
+    deity: "Maa Mahakali",
+  },
+  {
+    title: "Sindhurmani Kudrishti Nivaran (Evil Eye) Puja",
+    description:
+      "A traditional protective ritual performed to alleviate the effects of Kudrishti (evil eye), cleanse negative vibrations, and invite peace, positivity, and protection.",
+    image: "/images/evileye.jpg",
+    duration: "1–2 Hours",
+    deity: "Protective Deities",
+  },
+  {
+    title: "Mahakal Bhairav Puja",
+    description:
+      "A sacred puja dedicated to Lord Mahakal Bhairav, performed to seek protection from negativity, fear, unwanted influences, and spiritual disturbances while encouraging inner strength.",
+    image: "/images/mahakal.jpg",
+    duration: "2 Hours",
+    deity: "Lord Mahakal Bhairav",
+  },
+  {
+    title: "Shri Sindhurmani Hanuman Pret Badha Nash Puja",
+    description:
+      "A devotional Hanuman puja performed to seek divine protection from spiritual disturbances, negative influences, fear, and unwanted energies while invoking courage and strength.",
+    image: "/images/hanuman.jpg",
+    duration: "2–3 Hours",
+    deity: "Lord Hanuman",
+  },
+  {
+    title: "Sindhurmani Maha Kali Puja",
+    description:
+      "A powerful worship ceremony dedicated to Maa Kali, seeking divine protection, courage, spiritual strength, and freedom from negative influences and harmful energies.",
+    image: "/images/kalimaa.jpg",
+    duration: "2–3 Hours",
+    deity: "Maa Kali",
+  },
+  {
+    title: "Maa Dhumavati Puja for Protection from Negative Energy",
+    description:
+      "A sacred ritual dedicated to Maa Dhumavati, performed to seek spiritual protection, remove persistent negativity, overcome difficult influences, and restore balance and peace.",
+    image: "/images/dhumavati.jpg",
+    duration: "2–3 Hours",
+    deity: "Maa Dhumavati",
+  },
+  {
+    title: "Navgrah Shanti Puja",
+    description:
+      "A sacred Vedic ritual dedicated to the Navagrahas to seek planetary harmony, reduce unfavorable influences, overcome obstacles, and promote peace, balance, and positive energy.",
+    image: "/images/navgraha.jpg",
+    duration: "2–3 Hours",
+    deity: "Navagrahas",
+  },
+  {
+    title: "Gajmukta Maha Kali Puja",
+    description:
+      "A powerful devotional ceremony invoking Maa Kali for spiritual strength, protection, removal of negativity, and blessings for courage, peace, and positive transformation.",
+    image: "/images/kalimaa.jpg",
+    duration: "2–3 Hours",
+    deity: "Maa Kali",
+  },
+  {
+    title: "Sindhurmani Laxmi Puja",
+    description:
+      "A sacred worship ceremony dedicated to Goddess Lakshmi to invite positive energy, prosperity, peace, abundance, and auspiciousness into the home and life.",
+    image: "/images/lakshmi.jpg",
+    duration: "1–2 Hours",
+    deity: "Goddess Lakshmi",
+  },
+]
+  
   const benefits = [
     {
-      icon: Heart,
-      title: "Suitable Life Partner",
-      description:
-        "Seek divine blessings to find a compatible life partner and attract a happy, fulfilling marriage.",
-    },
-    {
-      icon: HeartHandshake,
-      title: "Marital Harmony",
-      description:
-        "Strengthen love, understanding, trust, and mutual respect between couples for a peaceful married life.",
-    },
-    {
       icon: ShieldCheck,
-      title: "Removal of Marriage Obstacles",
+      title: "Protection from Negative Energy",
       description:
-        "Perform sacred rituals to reduce the effects of doshas, delays, and other obstacles affecting marriage prospects.",
-    },
-    {
-      icon: Users,
-      title: "Healthy Relationships",
-      description:
-        "Invite divine grace to nurture stronger family bonds, meaningful relationships, and emotional well-being.",
-    },
-    {
-      icon: Flower2,
-      title: "Love & Togetherness",
-      description:
-        "Receive the blessings of Lord Shiva and Goddess Parvati for lifelong companionship, affection, and marital bliss.",
+        "Seek divine protection from negative energies, unwanted influences, and harmful vibrations affecting your life and surroundings.",
     },
     {
       icon: Sparkles,
-      title: "Peace & Positivity",
+      title: "Spiritual Cleansing",
       description:
-        "Fill your home and relationships with positive energy, harmony, and auspicious blessings through authentic Vedic rituals.",
+        "Sacred Vedic rituals help cleanse the aura and surroundings, promoting a more positive and spiritually balanced environment.",
+    },
+    {
+      icon: Shield,
+      title: "Protection from Evil Influences",
+      description:
+        "Receive divine blessings for protection from negative forces, evil influences, and energies that may disturb your peace and well-being.",
+    },
+    {
+      icon: Heart,
+      title: "Peace of Mind",
+      description:
+        "Invite positive energy and divine grace into your life to reduce feelings of fear, heaviness, and emotional disturbance.",
+    },
+    {
+      icon: Flower2,
+      title: "Positive Energy & Harmony",
+      description:
+        "Create a peaceful and harmonious atmosphere at home and work by encouraging positivity, balance, and auspicious energy.",
+    },
+    {
+      icon: Sun,
+      title: "Strength & Positivity",
+      description:
+        "Receive spiritual blessings to build inner strength, confidence, and a positive outlook while moving forward with greater peace.",
     },
   ];
 
   const suitableFor = [
-    "Individuals seeking a suitable life partner",
-    "People experiencing delays in marriage",
-    "Those affected by Manglik (Kuja) Dosha or other marriage-related doshas",
-    "Couples wishing to strengthen love and mutual understanding",
-    "Families praying for the successful marriage of their children",
-    "Newly married couples seeking lifelong harmony and happiness",
-    "Couples celebrating important marital milestones",
-    "Anyone seeking divine blessings for love, marriage, and lasting relationships",
+    "Individuals feeling surrounded by negative energy or unwanted influences",
+    "People experiencing frequent negativity, fear, or emotional heaviness",
+    "Those seeking spiritual cleansing and protection",
+    "Families wishing to maintain a peaceful and positive home environment",
+    "People facing repeated obstacles, disturbances, or unexplained negativity",
+    "Those seeking protection from evil eye (Nazar) and negative influences",
+    "Individuals looking to restore peace, positivity, and spiritual balance",
+    "Anyone seeking divine blessings for protection, positivity, and overall well-being",
   ];
 
   const steps = [
@@ -153,7 +218,7 @@ export default function ProtectionFromNegativity() {
 
             <span>/</span>
 
-            <span className="text-primary">Love, Marriage and Relationships</span>
+            <span className="text-primary">Protection from Negativity</span>
           </nav>
         </div>
       </section>
@@ -167,15 +232,16 @@ export default function ProtectionFromNegativity() {
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Marriage, Love & Relationship poojas
+              Protection from Negativity Poojas
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-              Seek the divine blessings of Lord Shiva, Goddess Parvati, Lord
-              Ganesha, the Navagrahas, and other revered deities to remove
-              obstacles in marriage, attract a suitable life partner, strengthen
-              love and companionship, foster marital harmony, and nurture
-              lasting, fulfilling relationships.
+              Seek the divine blessings of revered deities through sacred Vedic
+              rituals to cleanse negative energies, protect against unwanted
+              influences, restore peace and positivity, and create a harmonious
+              spiritual environment. These poojas are performed to promote
+              spiritual protection, inner strength, emotional balance, and
+              overall well-being.
             </p>
           </div>
 
@@ -222,36 +288,34 @@ export default function ProtectionFromNegativity() {
         </div>
       </section>
       <section className="py-20">
-  <div className="mx-auto max-w-5xl px-6 text-center">
-    <span className="font-semibold uppercase tracking-[0.3em] text-primary">
-      About These Rituals
-    </span>
+        <div className="mx-auto max-w-5xl px-6 text-center">
+         <span className="font-semibold uppercase tracking-[0.3em] text-primary">
+  About These Rituals
+</span>
 
-    <h2 className="mt-5 font-serif text-4xl text-primary">
-      Strengthen Love, Harmony & Sacred Relationships
-    </h2>
+<h2 className="mt-5 font-serif text-4xl text-primary">
+  Protection, Cleansing & Positive Energy
+</h2>
 
-    <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
-      Since ancient times, Vedic traditions have regarded marriage as a sacred
-      union founded on love, trust, mutual respect, and divine blessings.
-      Through powerful yajnas, homams, and poojas dedicated to Lord Shiva,
-      Goddess Parvati, Lord Ganesha, the Navagrahas, and other revered deities,
-      devotees seek blessings for finding a suitable life partner, overcoming
-      marriage-related obstacles, strengthening relationships, and enjoying a
-      happy, harmonious married life.
-    </p>
+<p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
+  Since ancient times, Vedic traditions have used sacred yajnas, homams, and
+  poojas to invoke divine protection, cleanse negative energies, and restore
+  spiritual balance. Through rituals dedicated to revered deities and
+  protective forces, devotees seek blessings to overcome negativity, create a
+  peaceful environment, and invite positive energy, harmony, and auspiciousness
+  into their lives.
+</p>
 
-    <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-muted-foreground">
-      Every ritual is performed by experienced Vedic priests following
-      authentic traditions with a personalized sankalp in your name. Whether
-      you are praying for a suitable marriage alliance, seeking relief from
-      delays or doshas, strengthening the bond with your partner, or celebrating
-      important milestones in married life, these sacred ceremonies invoke
-      divine grace for love, companionship, family harmony, and lifelong
-      happiness.
-    </p>
-  </div>
-</section>
+<p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-muted-foreground">
+  Every ritual is performed by experienced Vedic priests following authentic
+  traditions with a personalized sankalp in your name. Whether you are seeking
+  protection from negative influences, relief from spiritual heaviness,
+  cleansing of your home or surroundings, or greater peace and positivity,
+  these sacred ceremonies are intended to invoke divine grace, strengthen
+  inner confidence, and promote spiritual well-being.
+</p>
+        </div>
+      </section>
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
@@ -260,7 +324,7 @@ export default function ProtectionFromNegativity() {
             </span>
 
             <h2 className="mt-4 font-serif text-4xl text-primary">
-              Why Perform Love Marriage and Relationship poojas?
+              Why Perform Protection from Negativity poojas?
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
@@ -333,9 +397,9 @@ export default function ProtectionFromNegativity() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-              From booking your preferred pooja to receiving divine blessings, we
-              ensure every ritual is performed with authenticity, devotion, and
-              complete transparency.
+              From booking your preferred pooja to receiving divine blessings,
+              we ensure every ritual is performed with authenticity, devotion,
+              and complete transparency.
             </p>
           </div>
           <div className="relative mt-20">
