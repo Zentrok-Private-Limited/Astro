@@ -4,117 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Search, CalendarDays } from "lucide-react";
 import { useMemo, useState } from "react";
-
-const allPoojas = [
-  {
-    title: "Diwali Pooja",
-    description:
-      "Invoke the blessings of Goddess Lakshmi and Lord Ganesha for wealth, prosperity, happiness, and success.",
-    image: "/images/festivals/diwali.jpg",
-    duration: "2–3 Hours",
-    deity: "Goddess Lakshmi & Lord Ganesha",
-    category: "Festival Pooja",
-  },
-  {
-    title: "Dhanteras Pooja",
-    description:
-      "Perform auspicious rituals to welcome prosperity, abundance, and financial well-being.",
-    image: "/images/festivals/dhanteras.jpg",
-    duration: "1–2 Hours",
-    deity: "Goddess Lakshmi & Lord Dhanvantari",
-    category: "Festival Pooja",
-  },
-  {
-    title: "Maha Shivratri Pooja",
-    description:
-      "Offer prayers to Lord Shiva with sacred rituals for peace, spiritual growth, and divine blessings.",
-    image: "/images/festivals/maha-shivratri.jpg",
-    duration: "2–3 Hours",
-    deity: "Lord Shiva",
-    category: "Festival Pooja",
-  },
-  {
-    title: "Ganesh Chaturthi Pooja",
-    description:
-      "Invoke Lord Ganesha's blessings for wisdom, prosperity, and the removal of obstacles.",
-    image: "/images/festivals/ganesh-chaturthi.jpg",
-    duration: "2–3 Hours",
-    deity: "Lord Ganesha",
-    category: "Festival Pooja",
-  },
-  {
-    title: "Birthday Pooja",
-    description:
-      "Celebrate your birthday with sacred Vedic rituals seeking health, happiness, longevity, and divine blessings.",
-    image: "/images/occasions/birthday-pooja.webp",
-    duration: "1–2 Hours",
-    deity: "Lord Ganesha & Family Deities",
-    category: "Occasion Pooja",
-  },
-  {
-    title: "Wedding Anniversary Pooja",
-    description:
-      "Mark your anniversary with special prayers for love, harmony, prosperity, and a blessed married life.",
-    image: "/images/occasions/anniversary-pooja.jpg",
-    duration: "1–2 Hours",
-    deity: "Lord Shiva & Goddess Parvati",
-    category: "Occasion Pooja",
-  },
-  {
-    title: "Griha Pravesh Pooja",
-    description:
-      "Begin life in your new home with auspicious rituals inviting peace, prosperity, and positive energy.",
-    image: "/images/occasions/griha-pravesh.jpg",
-    duration: "2–3 Hours",
-    deity: "Lord Ganesha, Goddess Lakshmi & Vastu Purusha",
-    category: "Occasion Pooja",
-  },
-  {
-    title: "Vastu Pooja",
-    description:
-      "Perform Vastu rituals to invite harmony, prosperity, and well-being into your home or workplace.",
-    image: "/images/occasions/vastu-pooja.jpg",
-    duration: "2–3 Hours",
-    deity: "Vastu Purusha & Lord Ganesha",
-    category: "Occasion Pooja",
-  },
-  {
-    title: "Navgrah Shanti Puja",
-    description:
-      "Seek the blessings of the nine celestial planets to reduce unfavorable influences and promote peace, prosperity, and success.",
-    image: "/images/navgraha.jpg",
-    duration: "2–3 Hours",
-    deity: "Navagrahas",
-    category: "Protection & Shanti",
-  },
-  {
-    title: "Nazar Utar Puja",
-    description:
-      "A traditional Vedic ritual performed to alleviate the effects of the evil eye and negative vibrations.",
-    image: "/images/evileye.jpg",
-    duration: "1 Hour",
-    deity: "Protective Deities",
-    category: "Protection Pooja",
-  },
-  {
-    title: "Mahakal Bhairav Puja",
-    description:
-      "A sacred puja dedicated to Lord Mahakal Bhairav for spiritual protection, strength, and removal of negative influences.",
-    image: "/images/mahakal.jpg",
-    duration: "2 Hours",
-    deity: "Lord Mahakal Bhairav",
-    category: "Protection Pooja",
-  },
-  {
-    title: "Ayushya Homa",
-    description:
-      "A sacred homa performed to pray for long life, good health, and overall well-being.",
-    image: "/images/ayushhomam.jpg",
-    duration: "2–3 Hours",
-    deity: "Ayushya Devata & Lord Dhanvantari",
-    category: "Health & Well-being",
-  },
-];
+import { allPoojas } from "@/data/poojasData";
 
 export default function AllPoojasPage() {
   const [search, setSearch] = useState("");
@@ -158,7 +48,7 @@ export default function AllPoojasPage() {
       </section>
 
       {/* Hero */}
-      <section className="py-15">
+      <section className="py-10">
         <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.06]" />
 
         <div className="relative mx-auto max-w-5xl px-6 text-center">
