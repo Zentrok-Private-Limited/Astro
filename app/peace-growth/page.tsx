@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CalendarDays, ClipboardPen, Flame, Video, Gift } from "lucide-react";
 import {
@@ -11,6 +13,7 @@ import {
 } from "lucide-react";
 
 export default function PeaceandGrowth() {
+  const router = useRouter();
   const peaceandgrowthpoojas = [
     {
       title: "Mangala Gauri Puja",
@@ -362,9 +365,13 @@ export default function PeaceandGrowth() {
                     </span>
                   </div>
 
-                  <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                    Book this pooja
-                  </button>
+                  <button
+                      onClick={() => router.push("/booking")}
+                      className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90"
+                    >
+                      <CalendarDays className="h-4 w-4" />
+                      Book This Pooja
+                    </button>
                 </div>
               </article>
             ))}

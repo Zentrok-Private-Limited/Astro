@@ -1,6 +1,7 @@
-import Image from "next/image";
+"use client";
+
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import {
   CalendarDays,
   ClipboardPen,
@@ -165,8 +166,10 @@ const steps = [
     text: "Complete your spiritual journey with blessings, prasad (where applicable), and a peaceful heart.",
   },
 ];
+const router = useRouter();
 
   return (
+    
     <>
       <section className="relative overflow-hidden bg-linear-to-b from-secondary/30 via-background to-background">
 
@@ -241,9 +244,13 @@ const steps = [
                     </span>
                   </div>
 
-                  <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                    Book this pooja
-                  </button>
+                  <button
+                      onClick={() => router.push("/booking")}
+                      className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90"
+                    >
+                      <CalendarDays className="h-4 w-4" />
+                      Book This Pooja
+                    </button>
                 </div>
               </article>
             ))}

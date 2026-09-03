@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button } from "../../../components/ui/button";
+import { CalendarDays } from "lucide-react";
 
 export const FestivalPoojas = [
   {
@@ -176,6 +179,7 @@ export const FestivalPoojas = [
 ];
 
 export default function FestivalPooja() {
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden py-24">
       <div className="absolute inset-0 bg-secondary/20" />
@@ -237,9 +241,13 @@ export default function FestivalPooja() {
                   </span>
                 </div>
 
-                <Button className="mt-8 h-12 w-full rounded-full bg-primary text-white transition-all duration-300 hover:bg-primary/90 hover:shadow-lg">
-                  Book This Pooja
-                </Button>
+                <button
+                      onClick={() => router.push("/booking")}
+                      className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90"
+                    >
+                      <CalendarDays className="h-4 w-4" />
+                      Book This Pooja
+                    </button>
               </div>
             </article>
           ))}

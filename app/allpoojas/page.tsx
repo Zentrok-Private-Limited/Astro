@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, CalendarDays } from "lucide-react";
@@ -8,6 +9,7 @@ import { allPoojas } from "@/data/poojasData";
 
 export default function AllPoojasPage() {
   const [search, setSearch] = useState("");
+  const router = useRouter();
 
   const filteredPoojas = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -140,7 +142,10 @@ export default function AllPoojasPage() {
                       </span>
                     </div>
 
-                    <button className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
+                    <button
+                      onClick={() => router.push("/booking")}
+                      className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90"
+                    >
                       <CalendarDays className="h-4 w-4" />
                       Book This Pooja
                     </button>

@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CalendarDays, ClipboardPen, Flame, Video, Gift } from "lucide-react";
 import {
@@ -11,6 +13,7 @@ import {
 } from "lucide-react";
 
 export default function ProtectionFromNegativity() {
+  const router = useRouter();
   const festivalpoojas = [
   {
   title: "Diwali Pooja",
@@ -538,237 +541,242 @@ export default function ProtectionFromNegativity() {
 
   return (
     <>
-  <section className="relative overflow-hidden bg-linear-to-b from-secondary/30 via-background to-background">
-    <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 lg:grid-cols-2">
-      <nav className="mb-5 flex items-center gap-2 text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-primary">
-          Home
-        </Link>
+      <section className="relative overflow-hidden bg-linear-to-b from-secondary/30 via-background to-background">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 lg:grid-cols-2">
+          <nav className="mb-5 flex items-center gap-2 text-sm text-muted-foreground">
+            <Link href="/" className="hover:text-primary">
+              Home
+            </Link>
 
-        <span>/</span>
+            <span>/</span>
 
-        <Link href="/pooja-services" className="hover:text-primary">
-          Pooja Services
-        </Link>
+            <Link href="/pooja-services" className="hover:text-primary">
+              Pooja Services
+            </Link>
 
-        <span>/</span>
+            <span>/</span>
 
-        <span className="text-primary">Festival & Occasion Poojas</span>
-      </nav>
-    </div>
-  </section>
+            <span className="text-primary">Festival & Occasion Poojas</span>
+          </nav>
+        </div>
+      </section>
 
-  <section id="poojas" className="bg-secondary/20">
-    <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
+      <section id="poojas" className="bg-secondary/20">
+        <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
 
-    <div className="relative mx-auto max-w-7xl px-6">
-      <div className="mb-14 text-center">
-        <span className="font-semibold uppercase tracking-[0.3em] text-primary">
-          Sacred Celebrations
-        </span>
+        <div className="relative mx-auto max-w-7xl px-6">
+          <div className="mb-14 text-center">
+            <span className="font-semibold uppercase tracking-[0.3em] text-primary">
+              Sacred Celebrations
+            </span>
 
-        <h2 className="mt-4 font-serif text-4xl text-primary">
-          Festival & Occasion Poojas
-        </h2>
+            <h2 className="mt-4 font-serif text-4xl text-primary">
+              Festival & Occasion Poojas
+            </h2>
 
-        <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-          Celebrate festivals, auspicious occasions, and important milestones
-          with sacred Vedic rituals performed to invoke divine blessings,
-          prosperity, peace, happiness, and spiritual well-being. These poojas
-          help make special occasions more meaningful while bringing positive
-          energy and auspiciousness into your home and family.
-        </p>
-      </div>
-
-      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-        {festivalpoojas.map((pooja) => (
-          <article
-            key={pooja.title}
-            className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-          >
-            <div className="overflow-hidden">
-              <img
-                src={pooja.image}
-                alt={pooja.title}
-                className="aspect-4/3 w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="p-7">
-              <h3 className="font-serif text-2xl text-primary">
-                {pooja.title}
-              </h3>
-
-              <p className="mt-4 leading-7 text-muted-foreground">
-                {pooja.description}
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                  {pooja.deity}
-                </span>
-
-                <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
-                  {pooja.duration}
-                </span>
-              </div>
-
-              <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                Book this pooja
-              </button>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section className="py-20">
-    <div className="mx-auto max-w-5xl px-6 text-center">
-      <span className="font-semibold uppercase tracking-[0.3em] text-primary">
-        About These Rituals
-      </span>
-
-      <h2 className="mt-5 font-serif text-4xl text-primary">
-        Celebrate Every Occasion with Divine Blessings
-      </h2>
-
-      <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
-        Festivals and auspicious occasions hold a special place in Vedic
-        traditions. Sacred poojas, homams, and yajnas are performed to honor
-        revered deities, express gratitude, and invite divine blessings for
-        prosperity, happiness, peace, and success. From major Hindu festivals
-        to important family celebrations and new beginnings, these rituals
-        bring devotion and spiritual significance to every occasion.
-      </p>
-
-      <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-muted-foreground">
-        Every ritual is performed by experienced Vedic priests following
-        authentic traditions with a personalized sankalp in your name.
-        Whether you are celebrating a festival, starting a new chapter,
-        blessing your home, marking a special milestone, or praying for the
-        well-being of your family, these sacred ceremonies help create an
-        auspicious and spiritually uplifting experience.
-      </p>
-    </div>
-  </section>
-
-  <section className="py-24">
-    <div className="mx-auto max-w-7xl px-6">
-      <div className="mb-14 text-center">
-        <span className="font-semibold uppercase tracking-[0.35em] text-primary">
-          Benefits
-        </span>
-
-        <h2 className="mt-4 font-serif text-4xl text-primary">
-          Why Perform Festival & Occasion Poojas?
-        </h2>
-
-        <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-          Rooted in ancient Vedic traditions, these sacred ceremonies help
-          devotees celebrate important occasions with devotion while seeking
-          divine blessings for prosperity, happiness, peace, and auspicious
-          beginnings.
-        </p>
-      </div>
-
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {benefits.map(({ icon: Icon, title, description }) => (
-          <div
-            key={title}
-            className="group rounded-3xl border border-primary/10 bg-card p-8 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
-          >
-            <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white">
-              <Icon className="h-8 w-8" />
-            </div>
-
-            <h3 className="font-serif text-2xl text-primary">{title}</h3>
-
-            <p className="mt-4 leading-7 text-muted-foreground">
-              {description}
+            <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
+              Celebrate festivals, auspicious occasions, and important
+              milestones with sacred Vedic rituals performed to invoke divine
+              blessings, prosperity, peace, happiness, and spiritual well-being.
+              These poojas help make special occasions more meaningful while
+              bringing positive energy and auspiciousness into your home and
+              family.
             </p>
           </div>
-        ))}
-      </div>
-    </div>
-  </section>
 
-  <section className="bg-secondary/20 py-20">
-    <div className="mx-auto max-w-6xl px-6">
-      <div className="text-center">
-        <span className="font-semibold uppercase tracking-[0.35em] text-primary">
-          Suitable For
-        </span>
-
-        <h2 className="mt-4 font-serif text-4xl text-primary">
-          These Poojas Are Ideal For
-        </h2>
-      </div>
-
-      <div className="mt-12 grid gap-5 md:grid-cols-2">
-        {suitableFor.map((item) => (
-          <div
-            key={item}
-            className="flex items-center gap-4 rounded-2xl border border-primary/10 bg-card p-5"
-          >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
-              ✓
-            </div>
-
-            <p className="text-primary">{item}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section className="relative overflow-hidden bg-secondary/20 py-24">
-    <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
-
-    <div className="relative mx-auto max-w-7xl px-6">
-      <div className="text-center">
-        <span className="font-medium uppercase tracking-[0.35em] text-primary">
-          How It Works
-        </span>
-
-        <h2 className="mt-4 font-serif text-4xl text-primary md:text-5xl">
-          Celebrate Your Special Occasion in 5 Simple Steps
-        </h2>
-
-        <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
-          From selecting your preferred festival or occasion pooja to receiving
-          divine blessings, we ensure every ritual is performed with devotion,
-          authenticity, and care.
-        </p>
-      </div>
-
-      <div className="relative mt-20">
-        <div className="absolute left-0 right-0 top-16 hidden h-px bg-primary/20 lg:block" />
-
-        <div className="grid gap-10 lg:grid-cols-5">
-          {steps.map(({ icon: Icon, number, title, text }) => (
-            <div key={number} className="relative text-center">
-              <div className="relative mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-primary/20 bg-card shadow-lg">
-                <div className="absolute -left-2 -top-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
-                  {number}
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {festivalpoojas.map((pooja) => (
+              <article
+                key={pooja.title}
+                className="group overflow-hidden rounded-3xl border border-primary/10 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={pooja.image}
+                    alt={pooja.title}
+                    className="aspect-4/3 w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
                 </div>
 
-                <Icon className="h-10 w-10 text-primary" />
-              </div>
+                <div className="p-7">
+                  <h3 className="font-serif text-2xl text-primary">
+                    {pooja.title}
+                  </h3>
 
-              <h3 className="mt-6 font-serif text-xl text-primary">
-                {title}
-              </h3>
+                  <p className="mt-4 leading-7 text-muted-foreground">
+                    {pooja.description}
+                  </p>
 
-              <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                {text}
-              </p>
-            </div>
-          ))}
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
+                      {pooja.deity}
+                    </span>
+
+                    <span className="rounded-full bg-secondary px-3 py-1 text-sm text-primary">
+                      {pooja.duration}
+                    </span>
+                  </div>
+
+                  <button
+                    onClick={() => router.push("/booking")}
+                    className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90"
+                  >
+                    <CalendarDays className="h-4 w-4" />
+                    Book This Pooja
+                  </button>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-</>
+      </section>
+
+      <section className="py-20">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <span className="font-semibold uppercase tracking-[0.3em] text-primary">
+            About These Rituals
+          </span>
+
+          <h2 className="mt-5 font-serif text-4xl text-primary">
+            Celebrate Every Occasion with Divine Blessings
+          </h2>
+
+          <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-muted-foreground">
+            Festivals and auspicious occasions hold a special place in Vedic
+            traditions. Sacred poojas, homams, and yajnas are performed to honor
+            revered deities, express gratitude, and invite divine blessings for
+            prosperity, happiness, peace, and success. From major Hindu
+            festivals to important family celebrations and new beginnings, these
+            rituals bring devotion and spiritual significance to every occasion.
+          </p>
+
+          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-muted-foreground">
+            Every ritual is performed by experienced Vedic priests following
+            authentic traditions with a personalized sankalp in your name.
+            Whether you are celebrating a festival, starting a new chapter,
+            blessing your home, marking a special milestone, or praying for the
+            well-being of your family, these sacred ceremonies help create an
+            auspicious and spiritually uplifting experience.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-14 text-center">
+            <span className="font-semibold uppercase tracking-[0.35em] text-primary">
+              Benefits
+            </span>
+
+            <h2 className="mt-4 font-serif text-4xl text-primary">
+              Why Perform Festival & Occasion Poojas?
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
+              Rooted in ancient Vedic traditions, these sacred ceremonies help
+              devotees celebrate important occasions with devotion while seeking
+              divine blessings for prosperity, happiness, peace, and auspicious
+              beginnings.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {benefits.map(({ icon: Icon, title, description }) => (
+              <div
+                key={title}
+                className="group rounded-3xl border border-primary/10 bg-card p-8 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
+              >
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white">
+                  <Icon className="h-8 w-8" />
+                </div>
+
+                <h3 className="font-serif text-2xl text-primary">{title}</h3>
+
+                <p className="mt-4 leading-7 text-muted-foreground">
+                  {description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-secondary/20 py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="text-center">
+            <span className="font-semibold uppercase tracking-[0.35em] text-primary">
+              Suitable For
+            </span>
+
+            <h2 className="mt-4 font-serif text-4xl text-primary">
+              These Poojas Are Ideal For
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {suitableFor.map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-4 rounded-2xl border border-primary/10 bg-card p-5"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                  ✓
+                </div>
+
+                <p className="text-primary">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-secondary/20 py-24">
+        <div className="absolute inset-0 bg-[url('/images/mandala.jpg')] opacity-[0.1]" />
+
+        <div className="relative mx-auto max-w-7xl px-6">
+          <div className="text-center">
+            <span className="font-medium uppercase tracking-[0.35em] text-primary">
+              How It Works
+            </span>
+
+            <h2 className="mt-4 font-serif text-4xl text-primary md:text-5xl">
+              Celebrate Your Special Occasion in 5 Simple Steps
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl leading-8 text-muted-foreground">
+              From selecting your preferred festival or occasion pooja to
+              receiving divine blessings, we ensure every ritual is performed
+              with devotion, authenticity, and care.
+            </p>
+          </div>
+
+          <div className="relative mt-20">
+            <div className="absolute left-0 right-0 top-16 hidden h-px bg-primary/20 lg:block" />
+
+            <div className="grid gap-10 lg:grid-cols-5">
+              {steps.map(({ icon: Icon, number, title, text }) => (
+                <div key={number} className="relative text-center">
+                  <div className="relative mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-primary/20 bg-card shadow-lg">
+                    <div className="absolute -left-2 -top-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+                      {number}
+                    </div>
+
+                    <Icon className="h-10 w-10 text-primary" />
+                  </div>
+
+                  <h3 className="mt-6 font-serif text-xl text-primary">
+                    {title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                    {text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

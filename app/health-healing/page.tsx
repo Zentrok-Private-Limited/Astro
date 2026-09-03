@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 import {
   HeartPulse,
   ShieldCheck,
@@ -18,6 +20,7 @@ import {
 } from "lucide-react";
 
 export default function HealthHealingHero() {
+  const router = useRouter();
   const healthpoojas = [
   {
     title: "Hanuman Bahuk Paath for Mysterious / Unknown Disease",
@@ -324,9 +327,13 @@ const steps = [
                     </span>
                   </div>
 
-                  <button className="mt-8 w-full rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90">
-                    Book this pooja
-                  </button>
+                  <button
+                      onClick={() => router.push("/booking")}
+                      className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 font-medium text-white transition hover:opacity-90"
+                    >
+                      <CalendarDays className="h-4 w-4" />
+                      Book This Pooja
+                    </button>
                 </div>
               </article>
             ))}
